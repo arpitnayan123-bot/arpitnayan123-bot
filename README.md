@@ -17,4 +17,3 @@
   <text x="70" y="226" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" letter-spacing="3" fill="#5EEAD4">NEXURA AI  ·  NEXURA OS</text>
   <path d="M500 225 H700 L730 225 L750 165 L780 265 L810 145 L835 225 H1150" fill="none" stroke="url(#pulse)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-# arpitnayan123-bot-
