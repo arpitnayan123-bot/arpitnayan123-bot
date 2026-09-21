@@ -16,9 +16,13 @@
 &nbsp;
 <img src="https://img.shields.io/badge/Status-Open_to_Collaborate-DB61A2?style=flat-square&labelColor=0D1117" alt="Open to Collaborate"/>
 
+<br/>
+
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/orbit.svg" width="132" alt="Arpit Nayan monogram"/>
+
 </div>
 
----
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
 ## 👨‍💻 &nbsp;About Me
 
@@ -44,7 +48,7 @@ const arpit = {
 
 <br/>
 
----
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
 ## 🚀 &nbsp;Flagship Builds
 
@@ -137,7 +141,15 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 </tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
+
+## 🛰️ &nbsp;Currently Building
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/building-now.svg" width="96%" alt="Currently building — live terminal card"/>
+</div>
+
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
 ## 🛠️ &nbsp;Tech Arsenal
 
@@ -147,7 +159,7 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
 ## 📈 &nbsp;GitHub Analytics
 
@@ -167,7 +179,7 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
   <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=true&background=0D1117&ring=3FB950&fire=A371F7&currStreakLabel=3FB950&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=C9D1D9&dates=8B949E" alt="Contribution Streak"/>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
 ## 🐍 &nbsp;Contribution Snake
 
@@ -182,12 +194,20 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
   <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/output/github-contribution-grid-snake.svg" alt="Contribution snake animation"/>
 </picture>
 
----
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
 ## 🤝 &nbsp;Connect With Me
 
 <div align="center">
 
+<a href="https://www.linkedin.com/in/arpit-nayan-842bb7309" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="mailto:arpitnayan123@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Say_Hi-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+&nbsp;
 <a href="https://github.com/arpitnayan123-bot">
   <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Follow"/>
 </a>
@@ -195,6 +215,12 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 <a href="https://github.com/arpitnayan123-bot?tab=repositories">
   <img src="https://img.shields.io/badge/Repositories-Explore_All-3FB950?style=for-the-badge&logo=github&logoColor=white&labelColor=161B22" alt="Explore Repositories"/>
 </a>
+
+</div>
+
+<div align="center">
+
+📬 &nbsp;<a href="mailto:arpitnayan123@gmail.com">arpitnayan123@gmail.com</a>
 
 </div>
 
