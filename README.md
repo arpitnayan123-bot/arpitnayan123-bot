@@ -1,130 +1,215 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Arpit - Building healthcare AI for India">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B1220"/>
-      <stop offset="0.55" stop-color="#12306B"/>
-      <stop offset="1" stop-color="#0D9488"/>
-    </linearGradient>
-    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5EEAD4" stop-opacity="0.1"/>
-      <stop offset="0.5" stop-color="#5EEAD4"/>
-      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0.1"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
-  <text x="70" y="130" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#FFFFFF">Arpit</text>
-  <text x="70" y="182" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" fill="#CBD5E1">Building healthcare AI for India</text>
-  <text x="70" y="226" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" letter-spacing="3" fill="#5EEAD4">NEXURA AI  ·  NEXURA OS</text>
-  <path d="M500 225 H700 L730 225 L750 165 L780 265 L810 145 L835 225 H1150" fill="none" stroke="url(#pulse)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/banner.svg" alt="Arpit — Building healthcare AI for India" width="100%" />
-</p>
+<div align="center">
 
-<h3 align="center">Student Founder · Solo Builder · Healthcare AI for India 🇮🇳</h3>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0D1117,55:1F6FEB,100:A371F7&text=Arpit%20Nayan&fontSize=46&fontColor=E6EDF3&fontAlignY=34&desc=IIT%20Jodhpur%20%E2%80%A2%20Management%20and%20Technology%20%E2%80%A2%20Product%20Engineer&descAlignY=54&descSize=15&animation=fadeIn" width="100%" alt="Arpit Nayan — Header"/>
 
-<p align="center">
-  <a href="https://nexuraai.in"><img src="https://img.shields.io/badge/Nexura_AI-nexuraai.in-0D9488?style=for-the-badge" alt="Nexura AI" /></a>
-  <img src="https://img.shields.io/badge/IIT_Madras-BS_Data_Science_%26_AI-1E3A8A?style=for-the-badge" alt="IIT Madras" />
-  <img src="https://img.shields.io/badge/IIT_Jodhpur-BS_Management_%26_Technology-1E3A8A?style=for-the-badge" alt="IIT Jodhpur" />
-</p>
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2600&pause=900&color=3FB950&center=true&vCenter=true&repeat=true&width=700&height=45&lines=%F0%9F%9A%80+Building+Agri-link+%E2%80%94+farmer-direct+quick+commerce%3B%F0%9F%8F%A5+Scaling+Nexura-OS+%E2%80%94+healthcare+at+platform+scale%3B%F0%9F%A9%BA+AI+healthcare+in+11+Indian+languages%3B%E2%9A%A1+TypeScript+%C2%B7+Next.js+16+%C2%B7+PostgreSQL+%C2%B7+Redis%3B%F0%9F%8E%AF+Turning+ideas+into+products+people+trust)](https://git.io/typing-svg)
+
+<br/>
+
+<img src="https://img.shields.io/badge/IIT_Jodhpur-Management_%26_Tech-1F6FEB?style=flat-square&labelColor=0D1117" alt="IIT Jodhpur"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Role-Full--Stack_Product_Engineer-3FB950?style=flat-square&labelColor=0D1117" alt="Role"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Focus-Commerce_·_Healthcare_·_AI-A371F7?style=flat-square&labelColor=0D1117" alt="Focus"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Status-Open_to_Collaborate-DB61A2?style=flat-square&labelColor=0D1117" alt="Open to Collaborate"/>
+
+</div>
 
 ---
 
-### 👋 About Me
+## 👨‍💻 &nbsp;About Me
 
-```ts
+<img align="right" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arpitnayan123-bot&theme=github_dark" width="390" alt="Arpit's GitHub Stats"/>
+
+```javascript
 const arpit = {
-  role: "Founder, Nexura AI",
-  based: "India",
-  mission: "Healthcare that works for every Indian — in their language, at their budget",
-  studying: [
-    "BS in Data Science and AI — IIT Madras",
-    "BS in Management and Technology — IIT Jodhpur",
-  ],
-  currentFocus: {
-    building: "Nexura OS — one platform for patients, clinics, hospitals & pharmacies",
-    shipping: "AI orchestration with safety pre-checks and a 5-level escalation engine",
-    exploring: ["ABDM / ABHA", "FHIR R4 interoperability", "DPDP Act consent", "vernacular AI"],
-  },
+  school: "IIT Jodhpur — Management & Technology",
+  role: "Full-Stack Product Engineer",
+  building: ["Agri-link 🌱", "Nexura-OS 🏥", "AAROGYA AI 🩺"],
+  stack: ["TypeScript", "Next.js 16", "Prisma", "PostgreSQL", "Redis"],
+  philosophy: "Move fast. Scale hard. Stay honest.",
+  openTo: ["Collaborations", "Startups", "Bold ideas"],
 };
 ```
 
----
+- 🎓 I study **Management & Technology at IIT Jodhpur** — engineering with a business brain, business with an engineer's hands
+- 🌱 Currently shipping **Agri-link** — farmer-direct quick-commerce where your UPI payment pays every farmer in the basket *instantly*, with payout proof on the receipt
+- 🏥 Scaling **Nexura-OS** — a healthcare operating ecosystem spanning **189 API routes**, **165 Postgres models** and **345 unit tests**
+- 🩺 Shipped **AAROGYA AI** — full-stack AI healthcare in **11 Indian languages**, powered by Llama 3.3 + ICMR clinical data
+- 💡 I believe products should **move fast, scale hard, and stay honest** — especially when they touch farmers' income and patients' health
+- 🤝 Open to collaborations solving **real Indian problems** with technology
 
-### 🚀 What I'm Building
-
-| Project | What it is | Stack |
-| :-- | :-- | :-- |
-| **[Nexura OS](https://github.com/arpitnayan123-bot/Nexura-OS)** | Multi-product healthcare platform — Hospital OS, Clinic, Pharmacia, Patient Portal, Connect and consumer surfaces on one shared platform layer. 189 API routes · 165 Postgres models · 345 tests | TypeScript · Next.js · Prisma · PostgreSQL |
-| **Nexura AI** | Consumer health-intelligence app for India: symptom analysis, lab & X-ray report analysis, diet planning, a fact-check module. Hinglish + voice-friendly, built around ICMR-INDIAB and NFHS-5 data | React · TypeScript · Vite · Supabase · Redis · Groq (Llama 3.3 70B) with Gemini fallback |
-| **HealthGuard 360** | Raspberry Pi 5 health-monitoring kiosk concept — SpO₂, ECG, IR temperature, blood pressure (early stage) | Raspberry Pi · sensors · Python |
-| **VoiceMarg** | Prototype fast-entry invoicing assistant for Marg ERP, aimed at pharmacies | NLP parser |
-
-🏆 **UNESCO Youth Hackathon 2026** — built and demoed Nexura AI
+<br/>
 
 ---
 
-### 🛠️ Tech Arsenal
+## 🚀 &nbsp;Flagship Builds
 
-**Languages & Frontend**
+<div align="center">
+  <i>Three products, one mission — technology that pays farmers fairly and keeps India healthy.</i>
+</div>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<br/>
 
-**Backend & Data**
+<table>
+<tr>
+<td width="96" align="center" valign="top">
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+<img src="https://skillicons.dev/icons?i=nextjs" width="68"/>
+<br/><br/>
+<img src="https://skillicons.dev/icons?i=postgres" width="68"/>
 
-**AI & LLM Engineering**
+</td>
+<td valign="top">
 
-![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-0D9488?style=for-the-badge)
+### 🌱 [Agri-link](https://github.com/arpitnayan123-bot/Agri-link) &nbsp;·&nbsp; Farmer-Direct Quick Commerce
 
-**Deployment & Hardware**
+> Your UPI payment instantly pays **every farmer** in your basket — with payout proof on the receipt.
 
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+Blinkit-grade quick-commerce UX rebuilt on an **honest money trail**, with an AI shopping assistant that understands what's actually in season.
+
+<img src="https://img.shields.io/badge/Next.js_16-FFFFFF?style=flat-square&logo=nextdotjs&logoColor=black" alt="Next.js 16"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma"/>
+<img src="https://img.shields.io/badge/UPI-Instant_Farmer_Payouts-3FB950?style=flat-square&labelColor=161B22" alt="UPI"/>
+<img src="https://img.shields.io/badge/AI-Shopping_Assistant-A371F7?style=flat-square&labelColor=161B22" alt="AI Assistant"/>
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="96" align="center" valign="top">
+
+<img src="https://skillicons.dev/icons?i=nextjs" width="68"/>
+<br/><br/>
+<img src="https://skillicons.dev/icons?i=redis" width="68"/>
+
+</td>
+<td valign="top">
+
+### 🏥 [Nexura-OS](https://github.com/arpitnayan123-bot/Nexura-OS) &nbsp;·&nbsp; Multi-Product Healthcare Platform
+
+> A production-grade healthcare operating ecosystem — seven staff-facing products, eight consumer health surfaces, one shared platform layer.
+
+Dark, cinematic command-center interfaces for clinicians, nurses, pharmacists, administrators, operations teams, patients and executives — built on a real, auditable backend.
+
+<img src="https://img.shields.io/badge/API_Routes-189-3FB950?style=flat-square&labelColor=161B22" alt="189 API Routes"/>
+<img src="https://img.shields.io/badge/Postgres_Models-165-A371F7?style=flat-square&labelColor=161B22" alt="165 Models"/>
+<img src="https://img.shields.io/badge/Unit_Tests-345-58A6FF?style=flat-square&labelColor=161B22" alt="345 Tests"/>
+<img src="https://img.shields.io/badge/PostgreSQL_17-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL 17"/>
+<img src="https://img.shields.io/badge/Redis_7-FF4438?style=flat-square&logo=redis&logoColor=white" alt="Redis 7"/>
+<img src="https://img.shields.io/badge/CI-Passing-3FB950?style=flat-square&logo=githubactions&logoColor=white" alt="CI"/>
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="96" align="center" valign="top">
+
+<img src="https://skillicons.dev/icons?i=react" width="68"/>
+<br/><br/>
+<img src="https://skillicons.dev/icons?i=supabase" width="68"/>
+
+</td>
+<td valign="top">
+
+### 🩺 [AAROGYA AI](https://github.com/arpitnayan123-bot/NAYAN) &nbsp;·&nbsp; AI Healthcare for Bharat
+
+> India's first full-stack AI healthcare platform — in **11 Indian languages**.
+
+From symptom triage to lab report analysis, X-ray reading to predictive health — powered by Llama 3.3 grounded in ICMR epidemiology data (350+ symptoms).
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
+<img src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=black" alt="Supabase"/>
+<img src="https://img.shields.io/badge/Groq-F55036?style=flat-square" alt="Groq"/>
+<img src="https://img.shields.io/badge/Llama_3.3-A371F7?style=flat-square" alt="Llama 3.3"/>
+<img src="https://img.shields.io/badge/Indian_Languages-11-DB61A2?style=flat-square&labelColor=161B22" alt="11 Languages"/>
+<img src="https://img.shields.io/badge/ICMR_Clinical_Data-350%2B_symptoms-F97316?style=flat-square&labelColor=161B22" alt="ICMR Data"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 🎯 Currently Learning & Exploring
+## 🛠️ &nbsp;Tech Arsenal
 
-- Indian health-data standards: **ABDM / ABHA** and **FHIR R4**
-- Privacy-first design under the **DPDP Act 2023**
-- Multilingual, voice-first AI for low-literacy and rural users
-- Embedded hardware for health kiosks (GPIO, sensor drivers, LTE)
+<div align="center">
 
----
+<img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,nodejs,prisma,postgres,redis,python,supabase,docker,git,github,vercel&perline=7&theme=dark" alt="Arpit's Tech Stack" width="85%"/>
 
-<!--
-### 📊 GitHub Analytics
-Uncomment once there is more public activity — empty stat cards look weaker than none.
-
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=arpitnayan123-bot&show_icons=true&theme=transparent&hide_border=true" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arpitnayan123-bot&layout=compact&theme=transparent&hide_border=true" alt="Top languages" />
-</p>
--->
-
-### 🤝 Let's Connect
-
-<!-- Replace the placeholders below, then delete this comment -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL)
-[![Website](https://img.shields.io/badge/Nexura_AI-0D9488?style=for-the-badge&logo=googlechrome&logoColor=white)](https://nexuraai.in)
+</div>
 
 ---
 
-<p align="center"><i>"Healthcare that speaks your language."</i></p>
+## 📈 &nbsp;GitHub Analytics
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=arpitnayan123-bot&label=Profile%20Views&color=0d9488&style=for-the-badge" alt="Profile views" />
-</p>
+<div align="center">
+  <a href="https://github.com/arpitnayan123-bot" title="Most Commit Language">
+    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arpitnayan123-bot&theme=github_dark" alt="Most Commit Language"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/arpitnayan123-bot" title="Repos per Language">
+    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arpitnayan123-bot&theme=github_dark" alt="Repos per Language"/>
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=true&background=0D1117&ring=3FB950&fire=A371F7&currStreakLabel=3FB950&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=C9D1D9&dates=8B949E" alt="Contribution Streak"/>
+</div>
+
+---
+
+## 🐍 &nbsp;Contribution Snake
+
+<div align="center">
+  <i>Feeding on commits, one pixel at a time — regenerated daily by GitHub Actions.</i>
+</div>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./output/github-contribution-grid-snake-dark.svg"/>
+  <img src="./output/github-contribution-grid-snake.svg" alt="Contribution snake animation"/>
+</picture>
+
+---
+
+## 🤝 &nbsp;Connect With Me
+
+<div align="center">
+
+<a href="https://github.com/arpitnayan123-bot">
+  <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Follow"/>
+</a>
+&nbsp;
+<a href="https://github.com/arpitnayan123-bot?tab=repositories">
+  <img src="https://img.shields.io/badge/Repositories-Explore_All-3FB950?style=for-the-badge&logo=github&logoColor=white&labelColor=161B22" alt="Explore Repositories"/>
+</a>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=arpitnayan123-bot&style=for-the-badge&color=3FB950&label=PROFILE+VIEWS" alt="Profile Views"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:A371F7,55:1F6FEB,100:0D1117&section=footer&text=Code%20%C2%B7%20Commerce%20%C2%B7%20Care&fontSize=22&fontColor=E6EDF3&fontAlignY=62&desc=Move%20fast%2C%20scale%20hard%2C%20stay%20honest.&descSize=13&descAlignY=83" width="100%" alt="Footer"/>
+
+</div>
