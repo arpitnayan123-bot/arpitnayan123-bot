@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <circle cx="65" cy="65" r="58" fill="#0D1117" stroke="#30363D" stroke-width="1.5"/>
+  <circle cx="65" cy="65" r="58" fill="none" stroke="#A371F7" stroke-width="3" stroke-linecap="round" stroke-dasharray="50 314">
+    <animateTransform attributeName="transform" type="rotate" from="0 65 65" to="360 65 65" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="65" cy="65" r="46" fill="none" stroke="#1F6FEB" stroke-width="1.5" stroke-dasharray="6 10" opacity="0.65">
+    <animateTransform attributeName="transform" type="rotate" from="360 65 65" to="0 65 65" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="65" cy="65" r="34" fill="none" stroke="#3FB950" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="30;36;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.5;0.15" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="65" y="74" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#E6EDF3">AN</text>
+</svg>
