@@ -125,6 +125,24 @@ const arpit = {
 
 <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
+## 🟩 &nbsp;3D Contribution Calendar
+
+<div align="center">
+  <i>A living, breathing city of code — powered by 3D contributions.</i>
+</div>
+
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-night-green.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-green-animate.svg"/>
+    <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-green-animate.svg" alt="3D GitHub Contributions Graph"/>
+  </picture>
+</div>
+
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
+
 ## 🐍 &nbsp;Contribution Snake
 
 <div align="center">
