@@ -151,16 +151,6 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 
 <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
-## 🛠️ &nbsp;Tech Arsenal
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,nodejs,prisma,postgres,redis,python,supabase,docker,git,github,vercel&perline=7&theme=dark" alt="Arpit's Tech Stack" width="85%"/>
-
-</div>
-
-<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
-
 ## 📈 &nbsp;GitHub Analytics
 
 <div align="center">
@@ -177,6 +167,24 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 
 <div align="center">
   <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=true&background=0D1117&ring=3FB950&fire=A371F7&currStreakLabel=3FB950&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=C9D1D9&dates=8B949E" alt="Contribution Streak"/>
+</div>
+
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
+
+## 🟩 &nbsp;3D Contribution Calendar
+
+<div align="center">
+  <i>A living, breathing city of code — powered by 3D contributions.</i>
+</div>
+
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-night-green.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-green-animate.svg"/>
+    <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-green-animate.svg" alt="3D GitHub Contributions Graph"/>
+  </picture>
 </div>
 
 <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
