@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0D1117,55:1F6FEB,100:A371F7&text=Arpit%20Nayan&fontSize=46&fontColor=E6EDF3&fontAlignY=34&desc=IIT%20Jodhpur%20%E2%80%A2%20Management%20and%20Technology%20%E2%80%A2%20Product%20Engineer&descAlignY=54&descSize=15&animation=fadeIn" width="100%" alt="Arpit Nayan — Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0D1117,55:1F6FEB,100:A371F7&text=Arpit%20Nayan&fontSize=46&fontColor=E6EDF3&fontAlignY=34&desc=IIT%20Jodhpur%20BS%20in%20Management%20%26%20Technology%20%E2%80%A2%20IIT%20Madras%20BS%20in%20Data%20Science%20%26%20Application&descAlignY=54&descSize=14&animation=fadeIn" width="100%" alt="Arpit Nayan — Header"/>
 
 <br/>
 
@@ -8,17 +8,13 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/IIT_Jodhpur-Management_%26_Tech-1F6FEB?style=flat-square&labelColor=0D1117" alt="IIT Jodhpur"/>
+<img src="https://img.shields.io/badge/IIT_Jodhpur-BS_Management_%26_Tech-1F6FEB?style=flat-square&labelColor=0D1117" alt="IIT Jodhpur"/>
 &nbsp;
-<img src="https://img.shields.io/badge/Role-Full--Stack_Product_Engineer-3FB950?style=flat-square&labelColor=0D1117" alt="Role"/>
+<img src="https://img.shields.io/badge/IIT_Madras-BS_Data_Science_%26_Application-A371F7?style=flat-square&labelColor=0D1117" alt="IIT Madras"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Focus-Commerce_·_Healthcare_·_AI-A371F7?style=flat-square&labelColor=0D1117" alt="Focus"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Status-Open_to_Collaborate-DB61A2?style=flat-square&labelColor=0D1117" alt="Open to Collaborate"/>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/orbit.svg" width="132" alt="Arpit Nayan monogram"/>
 
 </div>
 
@@ -30,16 +26,17 @@
 
 ```javascript
 const arpit = {
-  school: "IIT Jodhpur — Management & Technology",
-  role: "Full-Stack Product Engineer",
+  education: [
+    "IIT Jodhpur — BS in Management & Technology",
+    "IIT Madras — BS in Data Science & Application"
+  ],
   building: ["Agri-link 🌱", "Nexura-OS 🏥", "AAROGYA AI 🩺"],
-  stack: ["TypeScript", "Next.js 16", "Prisma", "PostgreSQL", "Redis"],
   philosophy: "Move fast. Scale hard. Stay honest.",
   openTo: ["Collaborations", "Startups", "Bold ideas"],
 };
 ```
 
-- 🎓 I study **Management & Technology at IIT Jodhpur** — engineering with a business brain, business with an engineer's hands
+- 🎓 I study **BS in Management & Technology at IIT Jodhpur** and **BS in Data Science & Application at IIT Madras**
 - 🌱 Currently shipping **Agri-link** — farmer-direct quick-commerce where your UPI payment pays every farmer in the basket *instantly*, with payout proof on the receipt
 - 🏥 Scaling **Nexura-OS** — a healthcare operating ecosystem spanning **189 API routes**, **165 Postgres models** and **345 unit tests**
 - 🩺 Shipped **AAROGYA AI** — full-stack AI healthcare in **11 Indian languages**, powered by Llama 3.3 + ICMR clinical data
@@ -148,6 +145,18 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 <div align="center">
   <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/building-now.svg" width="96%" alt="Currently building — live terminal card"/>
 </div>
+
+<img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
+
+## 🏆 &nbsp;GitHub Trophies
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=arpitnayan123-bot&theme=dracula&no-frame=true&no-bg=true&margin-w=15" alt="arpitnayan123-bot trophies" />
+  </a>
+</div>
+
+<br/>
 
 <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/assets/divider.svg" width="100%" alt=""/>
 
