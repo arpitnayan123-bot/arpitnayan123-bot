@@ -267,3 +267,9 @@ I'm open to collaborating on **AI-powered products**, **developer tools and codi
 <a href="https://github.com/arpitnayan123-bot">
   <img src="https://img.shields.io/badge/GitHub-arpitnayan123--bot-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Arpit Nayan on GitHub"/>
 </a>
+&nbsp;
+<a href="mailto:arpitnayan123@gmail.com">
+  <img src="https://img.shields.io/badge/Email-arpitnayan123%40gmail.com-1F6FEB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Arpit Nayan"/>
+</a>
+
+</div>
