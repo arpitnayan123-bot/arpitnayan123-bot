@@ -196,3 +196,14 @@ Beyond the flagships, these are live experiments I'm learning from:
 <img src="https://img.shields.io/badge/LLM_APIs_%26_App_Patterns-1B2540?style=flat-square&logo=openai&logoColor=8B5CF6" alt="LLM APIs and application patterns — learning"/>
 <img src="https://img.shields.io/badge/Agent_Architectures-1B2540?style=flat-square&logo=githubcopilot&logoColor=8B5CF6" alt="Agent architectures — learning"/>
 <img src="https://img.shields.io/badge/Testing_%7C_Vitest_%C2%B7_Playwright-1B2540?style=flat-square&logo=vitest&logoColor=8B5CF6" alt="Testing with Vitest and Playwright"/>
+
+<br/><br/>
+
+**areas of exploration**
+
+<img src="https://img.shields.io/badge/Software_Intelligence_%26_Reverse_Engineering-1B2540?style=flat-square&logoColor=8B5CF6" alt="Software intelligence and reverse engineering"/>
+<img src="https://img.shields.io/badge/Healthcare_Interoperability_%7C_FHIR_%C2%B7_ABDM-1B2540?style=flat-square&logoColor=8B5CF6" alt="Healthcare interoperability — FHIR and ABDM"/>
+<img src="https://img.shields.io/badge/Personal_Health_Memory-1B2540?style=flat-square&logoColor=8B5CF6" alt="Personal health memory"/>
+<img src="https://img.shields.io/badge/AI_Powered_Products-1B2540?style=flat-square&logoColor=8B5CF6" alt="AI-powered products"/>
+
+</div>
