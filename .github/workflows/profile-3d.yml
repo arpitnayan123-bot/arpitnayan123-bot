@@ -41,5 +41,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A .
-          git diff-index --quiet HEAD || (git commit -m "Generated 3D Profile Contrib" && git push)
+          git add profile-3d-contrib
+          git diff --cached --quiet || (git commit -m "Generate 3D contribution profiles" && git push)
