@@ -63,3 +63,13 @@ Both workflows use least-privilege `contents: write` permissions, a
 `concurrency` group (so overlapping runs cannot clobber each other), and only
 the built-in `GITHUB_TOKEN` — no personal tokens or secrets are required or
 stored.
+
+### One-time manual step
+
+The README's 3D section references `profile-blueviolet.svg`, which appears
+after the first workflow run. Trigger it once:
+
+> **Actions → Generate 3D Contribution Graph → Run workflow**
+
+Until then, the section falls back to the standard `profile-season-animate`
+render, so the profile never shows a broken image.
