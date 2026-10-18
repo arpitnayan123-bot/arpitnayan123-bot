@@ -1,8 +1,9 @@
 name: Generate 3D Contribution Graph
 
 on:
-  schedule: # 03:00 JST == 18:00 UTC
-    - cron: "0 18 * * *"
+  schedule:
+    # weekly — Sunday 18:00 UTC (a living graph does not need daily rebuilds)
+    - cron: "0 18 * * 0"
   workflow_dispatch:
 
 permissions:
