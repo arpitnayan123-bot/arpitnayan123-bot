@@ -211,3 +211,12 @@ Beyond the flagships, these are live experiments I'm learning from:
 <img src="assets/divider.svg" width="100%" alt=""/>
 
 ## GitHub Analytics
+
+<div align="center">
+  <a href="https://github.com/arpitnayan123-bot" title="Repositories per language">
+    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arpitnayan123-bot&theme=github_dark" alt="Language distribution across arpitnayan123-bot's repositories"/>
+  </a>
+  <a href="https://github.com/arpitnayan123-bot" title="Productive time">
+    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=arpitnayan123-bot&theme=github_dark" alt="Commit activity by time of day for arpitnayan123-bot"/>
+  </a>
+</div>
