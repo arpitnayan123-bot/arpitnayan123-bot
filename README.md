@@ -99,3 +99,7 @@ I study real open-source software-engineering systems to understand their archit
 <img src="https://img.shields.io/badge/Source_Private-30363D?style=flat-square&labelColor=0D1117" alt="Source: private repository"/>
 
 *Repository is private while the foundation sets — happy to walk through the design.*
+
+</td></tr>
+</table>
+
