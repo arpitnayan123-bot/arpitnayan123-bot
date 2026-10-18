@@ -27,6 +27,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+
+      # Profile palette — midnight navy background, blue→violet contribution ramp
+      # (defined in profile-3d-settings.json, rendered as profile-blueviolet.svg)
+      - name: Generate profile-palette 3D profile
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: ${{ github.workspace }}/profile-3d-settings.json
+
       - name: Commit & Push
         run: |
           git config user.name github-actions
