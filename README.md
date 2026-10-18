@@ -184,7 +184,13 @@ const arpit: Builder = {
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
-## 3D Contribution Calendar
+## Contribution Activity
+
+<div align="center">
+  <img src="assets/activity-header.svg" width="100%" alt="Contribution Activity — every square is a day of showing up"/>
+</div>
+
+<br/>
 
 <div align="center">
   <picture>
@@ -194,15 +200,31 @@ const arpit: Builder = {
   </picture>
 </div>
 
-<img src="assets/divider.svg" width="100%" alt=""/>
+<div align="center">
+  <i>a year of building in 3D — one column per week, one square per day</i>
+</div>
 
-## Contribution Snake
+<br/>
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/output/github-contribution-grid-snake-dark.svg"/>
     <img src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/output/github-contribution-grid-snake.svg" alt="Contribution snake animation eating the contribution grid of arpitnayan123-bot"/>
   </picture>
+</div>
+
+<div align="center">
+  <i>the snake eats a year of commits — rerendered fresh every night</i>
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=false&border_radius=8&background=0F0D16&border=2E2740&ring=FFB454&fire=FF8C42&currStreakLabel=FFC93C&currStreakNum=FFFFFF&sideNums=E8DCC4&sideLabels=C9B896&dates=9A8C74" alt="Contribution streak — current and longest streaks for arpitnayan123-bot"/>
+</div>
+
+<div align="center">
+  <i>consistency, compounded</i>
 </div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
