@@ -51,3 +51,15 @@ python3 scripts/generate_assets.py
 The generator writes all seven SVGs from the tokens and content lists at the
 top of the script. To change the typing phrases, edit `PHRASES`. To change
 the terminal session, edit `TERMINAL_LINES`. Commit the regenerated files.
+
+## GitHub Actions workflows
+
+| Workflow | What it does | Schedule |
+| --- | --- | --- |
+| `snake.yml` | renders the contribution snake (light + dark) and pushes it to the `output` branch | daily 00:00 UTC |
+| `profile-3d.yml` | generates the 3D contribution calendar — standard palettes plus the custom `profile-blueviolet.svg` from `profile-3d-settings.json` | weekly, Sunday 18:00 UTC |
+
+Both workflows use least-privilege `contents: write` permissions, a
+`concurrency` group (so overlapping runs cannot clobber each other), and only
+the built-in `GITHUB_TOKEN` — no personal tokens or secrets are required or
+stored.
