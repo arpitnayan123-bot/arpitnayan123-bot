@@ -82,25 +82,13 @@ const arpit: Builder = {
   *Repository is private while the foundation sets — happy to walk through the design.*
 </div>
 
-<table>
-<tr><td valign="top">
+<br/>
 
-### Medulla &nbsp;·&nbsp; Medical Learning OS
+<div align="center">
+  <img src="assets/project-medulla.svg" width="100%" alt="Medulla — medical learning OS. Turns the scattered MBBS curriculum into one connected learning map for med students. Next.js, TypeScript, Prisma. Status: active build."/>
 
-> Medical students drown in scattered resources — Medulla turns the curriculum into one connected map.
-
-A learning platform for medical students: a knowledge map of the MBBS curriculum, first-principles lessons, spaced revision, question practice, and clinical cases. Built to make medical learning organized and interactive rather than fragmented.
-
-<img src="https://img.shields.io/badge/Next.js_16-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js 16"/>
-<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/Prisma-1B2540?style=flat-square&logo=prisma&logoColor=8B5CF6" alt="Prisma"/>
-
-<img src="https://img.shields.io/badge/%E2%97%8F_Active_Build-1F6FEB?style=flat-square&labelColor=0D1117" alt="Status: active build"/>
-
-[**→ repository**](https://github.com/arpitnayan123-bot/Medula)
-
-</td></tr>
-</table>
+  [**→ repository**](https://github.com/arpitnayan123-bot/Medula)
+</div>
 
 <table>
 <tr><td valign="top">
