@@ -273,6 +273,111 @@ def escape(s: str) -> str:
 
 
 # ----------------------------------------------------------------------------
+# 3. Developer terminal
+# ----------------------------------------------------------------------------
+
+TERMINAL_TITLE = "arpit@iitj \u2014 ~/profile"
+TTW, TTH = 896, 244
+T_FS = 13
+LINE_H = 21.5
+T_X = 26
+T_Y0 = 66
+
+# (prompt-command, output-tspans) — outputs are lists of (text, fill) spans
+TERMINAL_LINES = [
+    ("whoami", [("Arpit Nayan", VIOLET_LT)]),
+    (
+        "interests",
+        [
+            ("AI", BLUE_LT),
+            (" | ", "#3D4660"),
+            ("Healthcare", VIOLET_LT),
+            (" | ", "#3D4660"),
+            ("Software Engineering", TEXT_SOFT),
+        ],
+    ),
+    ("exploring", [("Autonomous ", TEXT_SOFT), ("Coding Agents", BLUE_LT)]),
+    ("building", [("Healthcare Intelligence", BLUE_LT), (" Systems", TEXT_SOFT)]),
+]
+
+
+def terminal_svg() -> str:
+    n_lines = len(TERMINAL_LINES) * 2 + 1  # 4 cmd + 4 out + 1 prompt cursor line
+    content_h = n_lines * LINE_H + 14
+    body_h = max(int(T_Y0 + content_h), 150)
+    h = body_h + 6
+
+    total = 11.6  # master loop seconds
+    type_t = 0.62
+    step = total / len(TERMINAL_LINES)
+
+    clips, groups = [], []
+    y = T_Y0
+    for i, (cmd, out) in enumerate(TERMINAL_LINES):
+        cmd_w = (len(cmd) + 2) * T_FS * 0.6
+        f0 = (i * step) / total
+        f1 = (i * step + type_t) / total
+        keytimes = f"0;{f0:.4f};{f1:.4f};1"
+        clips.append(
+            f'  <clipPath id="tc{i}"><rect x="{T_X - 2}" y="{y - T_FS:.1f}" width="{cmd_w + 6:.1f}" height="20">'
+            f'<animate attributeName="width" calcMode="linear" values="0;0;{cmd_w + 6:.1f};{cmd_w + 6:.1f}" '
+            f'keyTimes="{keytimes}" dur="{total}s" repeatCount="indefinite"/></rect></clipPath>'
+        )
+        groups.append(
+            f'  <g clip-path="url(#tc{i})"><text x="{T_X}" y="{y:.1f}" font-family="{MONO}" '
+            f'font-size="{T_FS}"><tspan fill="{BLUE_LT}">$</tspan>'
+            f'<tspan fill="{TEXT}" dx="7">{escape(cmd)}</tspan></text></g>'
+        )
+        y += LINE_H
+        fa = (i * step + type_t + 0.12) / total
+        spans = "".join(f'<tspan fill="{fill}">{escape(t)}</tspan>' for t, fill in out)
+        groups.append(
+            f'  <g><text x="{T_X}" y="{y:.1f}" font-family="{MONO}" font-size="{T_FS}" '
+            f'opacity="1"><animate attributeName="opacity" calcMode="discrete" '
+            f'values="0;0;1;1" keyTimes="0;{fa:.4f};{min(fa + 0.002, 0.9999):.4f};1" '
+            f'dur="{total}s" repeatCount="indefinite"/>{spans}</text></g>'
+        )
+        y += LINE_H
+
+    prompt_y = y
+    # fade the whole session out just before the loop restarts
+    session_fade = (
+        f'  <animate attributeName="opacity" calcMode="linear" '
+        f'values="1;1;0" keyTimes="0;0.96;1" dur="{total}s" repeatCount="indefinite"/>'
+    )
+    prompt_cursor = (
+        f'  <text x="{T_X}" y="{prompt_y:.1f}" font-family="{MONO}" font-size="{T_FS}">'
+        f'<tspan fill="{BLUE_LT}">$</tspan></text>'
+        f'  <rect x="{T_X + 16}" y="{prompt_y - 12:.1f}" width="8" height="14" fill="{BLUE_LT}">'
+        f'<animate attributeName="opacity" values="1;0" calcMode="discrete" '
+        f'dur="1.1s" repeatCount="indefinite"/></rect>'
+    )
+
+    return f"""{GENERATED_NOTE}
+<svg xmlns="http://www.w3.org/2000/svg" width="{TTW}" height="{h}" viewBox="0 0 {TTW} {h}" role="img" aria-label="Terminal: whoami - Arpit Nayan; interests - AI, Healthcare, Software Engineering; exploring - Autonomous Coding Agents; building - Healthcare Intelligence Systems">
+  <defs>
+    {lin_grad("thead", [(0, "#111A2E"), (1, "#0D1424")])}
+  </defs>
+
+  <rect x="1" y="1" width="{TTW - 2}" height="{h - 2}" rx="14" fill="{BG_PANEL}" stroke="{STROKE}" stroke-width="1.5"/>
+  <rect x="1.75" y="1.75" width="{TTW - 3.5}" height="43" rx="13" fill="url(#thead)"/>
+  <rect x="1.75" y="24" width="{TTW - 3.5}" height="20" fill="url(#thead)"/>
+  <circle cx="28" cy="23" r="6" fill="#FF5F57" opacity="0.92"/>
+  <circle cx="50" cy="23" r="6" fill="#FEBC2E" opacity="0.92"/>
+  <circle cx="72" cy="23" r="6" fill="#28C840" opacity="0.92"/>
+  <text x="{TTW / 2}" y="27.5" text-anchor="middle" font-family="{MONO}" font-size="11.5" fill="{FAINT}">{escape(TERMINAL_TITLE)}</text>
+  <line x1="1" y1="44" x2="{TTW - 1}" y2="44" stroke="{STROKE}" stroke-width="1"/>
+
+<g opacity="1">
+  {session_fade}
+{chr(10).join(groups)}
+{prompt_cursor}
+</g>
+</svg>
+"""
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
@@ -280,6 +385,7 @@ FILES = {
     # desktop variants
     "header-hero.svg": lambda: header_svg(),
     "typing.svg": typing_svg,
+    "terminal.svg": terminal_svg,
 }
 
 
