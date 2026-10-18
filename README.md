@@ -178,3 +178,6 @@ Beyond the flagships, these are live experiments I'm learning from:
 <div align="center">
 
 **used in my projects**
+
+<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/JavaScript-1B2540?style=flat-square&logo=javascript&logoColor=58A6FF" alt="JavaScript"/>
