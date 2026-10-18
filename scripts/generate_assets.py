@@ -442,6 +442,21 @@ PROJECTS: list[dict] = [
         ],
     },
     {
+        "file": "project-sanket.svg",
+        "mono": "S",
+        "name": "Sanket",
+        "category": "VOICE TO FHIR CLINICAL NOTES",
+        "brief": "Consultation voice becomes a FHIR clinical note — with voice reminders for patients.",
+        "tech": "FHIR · ABDM-aligned",
+        "status": "PROTOTYPE",
+        "dot": VIOLET_LT,
+        "accent": VIOLET_LT,
+        "blobs": [
+            (VIOLET, 710, 45, 95, 0.36, -12, 8, 15),
+            (AMBER, 200, 145, 98, 0.30, 10, -10, 17),
+        ],
+    },
+    {
         "file": "project-healthtwin.svg",
         "mono": "H",
         "name": "Personal Health Twin",
