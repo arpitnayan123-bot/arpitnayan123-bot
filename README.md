@@ -279,3 +279,10 @@ I'm open to collaborating on **AI-powered products**, **developer tools and codi
 <div align="center">
 
 <img src="https://komarev.com/ghpvc/?username=arpitnayan123-bot&style=flat-square&color=1F6FEB&label=PROFILE+VIEWS" alt="Profile view counter"/>
+
+<picture>
+  <source media="(max-width: 560px)" srcset="assets/footer-banner-mobile.svg"/>
+  <img src="assets/footer-banner.svg" width="100%" alt="Footer banner — Learn. Build. Iterate. — AI products, healthcare technology, software systems"/>
+</picture>
+
+</div>
