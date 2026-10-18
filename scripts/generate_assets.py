@@ -411,6 +411,21 @@ PROJECTS: list[dict] = [
             (GOLD, 200, 140, 100, 0.30, 10, -10, 16),
         ],
     },
+    {
+        "file": "project-medulla.svg",
+        "mono": "M",
+        "name": "Medulla",
+        "category": "MEDICAL LEARNING OS",
+        "brief": "Turns the scattered MBBS curriculum into one connected learning map for med students.",
+        "tech": "Next.js · TypeScript · Prisma",
+        "status": "ACTIVE BUILD",
+        "dot": GOLD,
+        "accent": VIOLET_LT,
+        "blobs": [
+            (VIOLET, 700, 35, 95, 0.38, 12, -8, 14),
+            (GOLD, 190, 145, 100, 0.28, -10, 10, 17),
+        ],
+    },
 ]
 
 
