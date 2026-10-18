@@ -13,9 +13,11 @@ looping GIFs by scripts/generate_gifs.py, which shares this design system.
 
 Design system
 -------------
-- Backgrounds : charcoal panel (#0D1117)
-- Accents     : electric blue (#1F6FEB / #58A6FF), restrained violet (#8B5CF6 / #A371F7)
-- Text        : #E6EDF3 (primary), #C9D1D9 (secondary), #6E7681 (faint)
+- Backgrounds : aubergine-charcoal panels (#110E19)
+- Accents     : signature gold (#FFC93C / #FFE29A), amber (#FFB454),
+                warm orange (#FF8C42)
+- Secondary   : restrained violet (#8B5CF6 / #A78BFA) for contrast moments
+- Text        : #F2E9D8 (primary), #D9CDB4 (secondary), #96886F (faint)
 - Typography  : system monospace stack (no webfonts - GitHub <img> SVGs
                 cannot load external fonts)
 - Motion      : SMIL animations only (no CSS keyframes needed, no JS)
@@ -45,15 +47,19 @@ ASSETS = ROOT / "assets"
 # Design tokens
 # ----------------------------------------------------------------------------
 
-BG_PANEL = "#0D1117"     # charcoal panel
-STROKE = "#263048"       # subtle border
-BLUE = "#1F6FEB"         # electric blue
-BLUE_LT = "#58A6FF"      # light blue
+BG_PANEL = "#110E19"     # aubergine-charcoal panel
+STROKE = "#2E2740"       # warm subtle border
+GOLD = "#FFC93C"         # signature gold
+GOLD_LT = "#FFE29A"      # light gold
+AMBER = "#FFB454"        # amber
+ORANGE = "#FF8C42"       # warm orange
 VIOLET = "#8B5CF6"       # restrained violet
-VIOLET_LT = "#A371F7"    # light violet
-TEXT = "#E6EDF3"         # primary text
-TEXT_SOFT = "#C9D1D9"    # secondary text
-FAINT = "#6E7681"        # faint text
+VIOLET_LT = "#A78BFA"    # light violet
+TEXT = "#F2E9D8"         # warm primary text
+TEXT_SOFT = "#D9CDB4"    # warm secondary text
+FAINT = "#96886F"        # warm faint text
+BLUE = "#1F6FEB"         # (legacy) electric blue
+BLUE_LT = "#58A6FF"      # (legacy) light blue
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
