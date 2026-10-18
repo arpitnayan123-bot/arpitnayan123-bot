@@ -286,12 +286,119 @@ def divider_svg() -> str:
 """
 
 # ----------------------------------------------------------------------------
+# 4. Glassmorphism project cards + mantra strip
+# ----------------------------------------------------------------------------
+
+GW, GH = 896, 176          # card canvas
+P_X, P_Y, P_W, P_H = 10, 10, 876, 156
+P_RX = 16
+MW, MH = 896, 76           # mantra strip canvas
+
+
+def _glass_defs(accent: str) -> str:
+    """Shared gradient/filter block for one glass card (IDs are per-document)."""
+    return f"""  <defs>
+    <filter id="gblur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <clipPath id="gclip"><rect x="{P_X}" y="{P_Y}" width="{P_W}" height="{P_H}" rx="{P_RX}"/></clipPath>
+    {lin_grad("gtitle", [(0, GOLD_LT), (0.55, GOLD), (1, AMBER)])}
+    {lin_grad("gpanel", [(0, "#FFFFFF", "0.09"), (1, "#FFFFFF", "0.025")], x1="0%", y1="0%", x2="0%", y2="100%")}
+    {lin_grad("gsheen", [(0, "#FFFFFF", "0.16"), (1, "#FFFFFF", "0")], x1="0%", y1="0%", x2="0%", y2="100%")}
+    {lin_grad("gborder", [(0, "#FFFFFF", "0.42"), (0.5, accent, "0.22"), (1, "#FFFFFF", "0.05")])}
+  </defs>"""
+
+
+def glass_card_svg(spec) -> str:
+    """One frosted-glass project card: blurred accent blobs drifting behind
+    a lit glass panel, gold gradient title, a one-line brief, a status pill
+    and a quiet tech line."""
+    name = escape(spec["name"])
+    cat = escape(spec["category"])
+    brief = escape(spec["brief"])
+    tech = escape(spec["tech"])
+    label = escape(spec["status"])
+    aria = f"{name} - {cat}"
+    dot, accent = spec["dot"], spec["accent"]
+    chip_w = round(len(spec["status"]) * 6.8 + 40)
+    chip_x = GW - 26 - chip_w
+    blobs = []
+    for col, cx, cy, r, op, tx, ty, dur in spec["blobs"]:
+        blobs.append(
+            f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="{col}" opacity="{op}" filter="url(#gblur)">'
+            f'<animateTransform attributeName="transform" type="translate" '
+            f'values="0 0; {tx} {ty}; 0 0" dur="{dur}s" repeatCount="indefinite"/></circle>'
+        )
+    body = "\n".join(blobs)
+    return f"""{GENERATED_NOTE}
+<svg xmlns="http://www.w3.org/2000/svg" width="{GW}" height="{GH}" viewBox="0 0 {GW} {GH}" role="img" aria-label="{aria}">
+{_glass_defs(accent)}
+
+  <rect x="{P_X}" y="{P_Y}" width="{P_W}" height="{P_H}" rx="{P_RX}" fill="{BG_PANEL}"/>
+  <g clip-path="url(#gclip)">
+{body}
+    <rect x="{P_X}" y="{P_Y}" width="{P_W}" height="64" fill="url(#gsheen)"/>
+    <g transform="skewX(-14)"><rect x="-150" y="-20" width="120" height="230" fill="#FFFFFF" opacity="0.05"><animateTransform attributeName="transform" type="translate" values="0 0; 1220 0" dur="9s" repeatCount="indefinite"/></rect></g>
+  </g>
+  <rect x="{P_X + 0.6}" y="{P_Y + 0.6}" width="{P_W - 1.2}" height="{P_H - 1.2}" rx="{P_RX}" fill="none" stroke="url(#gborder)" stroke-width="1.2"/>
+  <circle cx="56" cy="62" r="23" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="56" y="70" text-anchor="middle" font-family="{MONO}" font-size="21" font-weight="700" fill="url(#gtitle)">{spec["mono"]}</text>
+  <text x="94" y="54" font-family="{MONO}" font-size="19" font-weight="700" letter-spacing="0.4" fill="url(#gtitle)">{name}</text>
+  <text x="94" y="72" font-family="{MONO}" font-size="9.5" letter-spacing="2.2" fill="{accent}">{cat}</text>
+  <text x="94" y="100" font-family="{MONO}" font-size="12.5" fill="{TEXT_SOFT}">{brief}</text>
+  <line x1="94" y1="118" x2="{GW - 90}" y2="118" stroke="#FFFFFF" stroke-opacity="0.07"/>
+  <text x="94" y="141" font-family="{MONO}" font-size="10.5" fill="{FAINT}">{tech}</text>
+  <rect x="{chip_x}" y="24" width="{chip_w}" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.16"/>
+  <circle cx="{chip_x + 15}" cy="36" r="3.4" fill="{dot}"/>
+  <text x="{chip_x + 26}" y="39.5" font-family="{MONO}" font-size="9.5" letter-spacing="1.6" fill="{TEXT_SOFT}">{label}</text>
+</svg>
+"""
+
+
+def mantra_svg() -> str:
+    """Frosted strip carrying the personal mantra in a slowly breathing
+    gold gradient."""
+    return f"""{GENERATED_NOTE}
+<svg xmlns="http://www.w3.org/2000/svg" width="{MW}" height="{MH}" viewBox="0 0 {MW} {MH}" role="img" aria-label="Personal mantra - learn relentlessly, build honestly, iterate">
+  <defs>
+    {lin_grad("mpanel", [(0, "#FFFFFF", "0.08"), (1, "#FFFFFF", "0.02")], x1="0%", y1="0%", x2="0%", y2="100%")}
+    {lin_grad("mborder", [(0, "#FFFFFF", "0.35"), (0.5, GOLD, "0.18"), (1, "#FFFFFF", "0.05")])}
+    <linearGradient id="mtext" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="{GOLD_LT}"><animate attributeName="stop-color" values="{GOLD_LT};{ORANGE};{GOLD_LT}" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="{AMBER}"><animate attributeName="stop-color" values="{AMBER};{GOLD_LT};{AMBER}" dur="7s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <rect x="{P_X}" y="{P_Y}" width="{P_W}" height="56" rx="14" fill="{BG_PANEL}"/>
+  <rect x="{P_X}" y="{P_Y}" width="{P_W}" height="56" rx="14" fill="url(#mpanel)"/>
+  <rect x="{P_X + 0.6}" y="{P_Y + 0.6}" width="{P_W - 1.2}" height="54.8" rx="14" fill="none" stroke="url(#mborder)" stroke-width="1.2"/>
+  <circle cx="90" cy="38" r="2.4" fill="{GOLD}" opacity="0.9"><animate attributeName="opacity" values="0.4;0.95;0.4" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="806" cy="38" r="2.4" fill="{GOLD}" opacity="0.9"><animate attributeName="opacity" values="0.4;0.95;0.4" dur="3.5s" begin="1.75s" repeatCount="indefinite"/></circle>
+  <text x="{MW / 2}" y="43" text-anchor="middle" font-family="{MONO}" font-size="15.5" font-weight="600" letter-spacing="1.2" fill="url(#mtext)">learn relentlessly &#183; build honestly &#183; iterate</text>
+</svg>
+"""
+
+
+# (file, monogram, name, category, one-line brief, tech line, status label,
+#  status dot, accent, drifting background blobs)
+PROJECTS: list[dict] = []
+
+
+def render_project_cards(only: str | None = None) -> None:
+    for spec in PROJECTS:
+        if only is not None and spec["file"] != only:
+            continue
+        (ASSETS / spec["file"]).write_text(glass_card_svg(spec), encoding="utf-8")
+        print(f"wrote  assets/{spec['file']:26}")
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 FILES = {
     "typing.svg": typing_svg,
     "terminal.svg": terminal_svg,
     "divider.svg": divider_svg,
+    "mantra.svg": mantra_svg,
 }
 
 
@@ -301,6 +408,7 @@ def main() -> None:
         svg = fn()
         (ASSETS / name).write_text(svg, encoding="utf-8")
         print(f"wrote  assets/{name:20} {len(svg):6d} bytes")
+    render_project_cards()
 
 
 if __name__ == "__main__":
