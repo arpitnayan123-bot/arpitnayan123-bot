@@ -78,3 +78,7 @@ An integrated healthcare operating system linking clinical workflows, pharmacy o
 <img src="https://img.shields.io/badge/PostgreSQL-1B2540?style=flat-square&logo=postgresql&logoColor=8B5CF6" alt="PostgreSQL"/>
 <img src="https://img.shields.io/badge/Redis-1B2540?style=flat-square&logo=redis&logoColor=8B5CF6" alt="Redis"/>
 <img src="https://img.shields.io/badge/Prisma-1B2540?style=flat-square&logo=prisma&logoColor=8B5CF6" alt="Prisma"/>
+
+<img src="https://img.shields.io/badge/%E2%97%8F_Active_Build-1F6FEB?style=flat-square&labelColor=0D1117" alt="Status: active build"/>
+
+[**→ repository**](https://github.com/arpitnayan123-bot/Nexura-OS) &nbsp;·&nbsp; [**→ live preview**](https://nexura-os.space-z.ai)
