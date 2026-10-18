@@ -73,3 +73,13 @@ after the first workflow run. Trigger it once:
 
 Until then, the section falls back to the standard `profile-season-animate`
 render, so the profile never shows a broken image.
+
+## Maintenance notes
+
+- The account **profile bio** is set in GitHub settings (not in this repo);
+  keep it aligned with the positioning in this README.
+- Third-party analytics (summary cards, streak stats, profile views) are
+  optional enhancements — if any of them go down, the rest of the profile is
+  unaffected because every custom visual is self-hosted.
+- Project badges only list technologies that are actually used in the linked
+  repositories; update them if the projects change.
