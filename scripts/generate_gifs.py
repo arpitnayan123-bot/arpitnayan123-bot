@@ -71,7 +71,11 @@ FRAME_MS = 55                 # ~2.6s loop
 SEED = 20261018
 
 NAME = "ARPIT NAYAN"
-TAGLINE = "AI Builder \u00b7 Aspiring Founder"
+TAGLINE_SEGMENTS = [
+    ("AI Builder", GOLD),
+    (" \u00b7 ", WARM_FAINT),
+    ("Aspiring Founder", GOLD_LT),
+]
 EYEBROW = "// building in public"
 FOOTER_MAIN = "Learn. Build. Iterate."
 FOOTER_SUB = "AI products \u00b7 healthcare technology \u00b7 software systems"
@@ -167,7 +171,7 @@ def segments_layer(size, cx, baseline_y, segments, fnt, spacing=0):
     return layer
 
 
-def dot_grid(size, spacing=28, color=BLUE_LT, alpha=13):
+def dot_grid(size, spacing=28, color=AMBER, alpha=11):
     layer = Image.new("RGBA", size, (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
     step = spacing * SS
@@ -220,7 +224,7 @@ def gradient_bar(size, cx, cy, w, h):
     x0, x1 = cx - w * SS / 2, cx + w * SS / 2
     for x in range(int(x0), int(x1)):
         d.line([(x, cy - h * SS / 2), (x, cy + h * SS / 2)],
-               fill=gradient([(0, BLUE_LT), (1, VIOLET_LT)], (x - x0) / (x1 - x0)))
+               fill=gradient([(0, GOLD_LT), (1, ORANGE)], (x - x0) / (x1 - x0)))
     return layer
 
 
@@ -231,7 +235,7 @@ def gradient_bar(size, cx, cy, w, h):
 def build_particles(n, W, H, rng):
     """Particles rising exactly k screen-heights per loop -> seamless."""
     parts = []
-    palette = [BLUE_LT, VIOLET_LT, TITLE, BLUE_MID]
+    palette = [GOLD_LT, AMBER, CREAM, ORANGE]
     for i in range(n):
         parts.append({
             "x0": rng.uniform(0, W),
@@ -312,14 +316,15 @@ def compose_hero(width=896, height=260, name_fs=46, tag_fs=15, eye_fs=11.5):
     base = Image.new("RGBA", (W, H), BG_DEEP + (255,))
     base.alpha_composite(dot_grid((W, H)))
     glow = radial_glow((W, H), cx, int(H * 0.42), int(W * 0.42), int(H * 0.46),
-                       VIOLET, 58, blur=18)
+                       GOLD, 52, blur=18)
 
-    title_l, title_glow = text_layer((W, H), cx, name_y, NAME,
-                                     font(name_fs), TITLE, spacing=6, glow=11)
+    title_l, title_glow = gradient_text_layer(
+        (W, H), cx, name_y, NAME, font(name_fs),
+        [(0, GOLD_LT), (0.55, GOLD), (1, AMBER)], spacing=6, glow=12)
     eye_l, _ = text_layer((W, H), cx, eye_y, EYEBROW,
-                          font(eye_fs, bold=False), FAINT, spacing=2.5)
-    tag_l, _ = text_layer((W, H), cx, tag_y, TAGLINE,
-                          font(tag_fs, bold=False), SUBTITLE, spacing=2)
+                          font(eye_fs, bold=False), WARM_FAINT, spacing=2.5)
+    tag_l = segments_layer((W, H), cx, tag_y, TAGLINE_SEGMENTS,
+                           font(tag_fs, bold=False), spacing=2)
     bar = gradient_bar((W, H), cx, bar_y, 120, 2.6)
 
     parts = build_particles(max(10, width // 56), W, H, rng)
@@ -329,11 +334,11 @@ def compose_hero(width=896, height=260, name_fs=46, tag_fs=15, eye_fs=11.5):
         fr = base.copy()
         fr.alpha_composite(scale_alpha(glow, 0.86 + 0.14 * math.sin(2 * math.pi * f / FRAMES)))
         fr.alpha_composite(aurora_wave((W, H), H - 78 * SS, 12 * SS, W, 1.0 * W * f / FRAMES,
-                                       [(0, BLUE), (1, VIOLET)], 40))
+                                       [(0, GOLD_DEEP), (1, ORANGE)], 40))
         fr.alpha_composite(aurora_wave((W, H), H - 64 * SS, 20 * SS, W // 2, 2.0 * (W // 2) * f / FRAMES,
-                                       [(0, BLUE), (0.5, BLUE_MID), (1, VIOLET)], 84))
+                                       [(0, GOLD), (0.5, AMBER), (1, ORANGE)], 84))
         fr.alpha_composite(aurora_wave((W, H), H - 46 * SS, 16 * SS, W // 4, 4.0 * (W // 4) * f / FRAMES,
-                                       [(0, VIOLET), (0.55, VIOLET_MID), (1, BLUE)], 140))
+                                       [(0, ORANGE), (0.55, AMBER), (1, GOLD)], 140))
         fr.alpha_composite(scale_alpha(title_glow, 0.8 + 0.2 * math.sin(2 * math.pi * f / FRAMES + 1.2)))
         fr.alpha_composite(title_l)
         fr.alpha_composite(eye_l)
