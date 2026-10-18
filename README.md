@@ -207,3 +207,7 @@ Beyond the flagships, these are live experiments I'm learning from:
 <img src="https://img.shields.io/badge/AI_Powered_Products-1B2540?style=flat-square&logoColor=8B5CF6" alt="AI-powered products"/>
 
 </div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## GitHub Analytics
