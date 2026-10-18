@@ -20,3 +20,7 @@
 <img src="https://img.shields.io/badge/Focus-AI_%C3%97_Healthcare_%C3%97_Software_Systems-58A6FF?style=flat-square&labelColor=0D1117" alt="Focus — AI, healthcare, software systems"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Status-Open_to_Collaborate-8B5CF6?style=flat-square&labelColor=0D1117" alt="Open to collaborate"/>
+
+</div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
