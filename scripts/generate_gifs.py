@@ -119,6 +119,28 @@ def text_layer(size, cx, baseline_y, s, fnt, fill, spacing=0, glow=0):
     return layer, glow_layer.filter(ImageFilter.GaussianBlur(radius=glow))
 
 
+def dot_grid(size, spacing=28, color=BLUE_LT, alpha=13):
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    step = spacing * SS
+    for y in range(0, size[1], step):
+        for x in range(0, size[0], step):
+            d.ellipse([x, y, x + 2 * SS, y + 2 * SS], fill=color + (alpha,))
+    return layer
+
+
+def radial_glow(size, cx, cy, rx, ry, color, core_alpha, blur=16):
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    steps = 36
+    for i in range(steps, 0, -1):
+        t = i / steps
+        a = int(core_alpha * (1 - t) ** 1.6)
+        d.ellipse([cx - rx * t, cy - ry * t, cx + rx * t, cy + ry * t],
+                  fill=color + (a,))
+    return layer.filter(ImageFilter.GaussianBlur(radius=blur * SS))
+
+
 # ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
