@@ -427,6 +427,21 @@ PROJECTS: list[dict] = [
         ],
     },
     {
+        "file": "project-aarogya.svg",
+        "mono": "A",
+        "name": "Aarogya AI",
+        "category": "AI HEALTH-INTELLIGENCE PLATFORM",
+        "brief": "Lab reports, Ayurveda and ABDM-aligned health records — one AI health companion.",
+        "tech": "live preview — aarogya-ai.space-z.ai",
+        "status": "LIVE EXPERIMENT",
+        "dot": AMBER,
+        "accent": ORANGE,
+        "blobs": [
+            (ORANGE, 705, 35, 92, 0.38, 12, 10, 14),
+            (GOLD, 195, 145, 100, 0.30, -10, -8, 16),
+        ],
+    },
+    {
         "file": "project-healthtwin.svg",
         "mono": "H",
         "name": "Personal Health Twin",
