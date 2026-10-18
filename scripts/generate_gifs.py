@@ -233,6 +233,21 @@ def draw_stars(layer, stars, t, F):
                   fill=s["col"] + (int(a),))
 
 
+def finalize(frames, out_path, duration=FRAME_MS):
+    """Downscale, quantize to one shared palette, save as looping GIF."""
+    W, H = frames[0].size
+    picks = [frames[i] for i in (0, FRAMES // 4, FRAMES // 2, 3 * FRAMES // 4)]
+    sheet = Image.new("RGB", (W, H * len(picks)))
+    for i, fr in enumerate(picks):
+        sheet.paste(fr.convert("RGB"), (0, i * H))
+    palette = sheet.quantize(colors=256, method=Image.MEDIANCUT)
+    q = [fr.convert("RGB").quantize(palette=palette, dither=Image.NONE)
+         for fr in frames]
+    small = [f.resize((W // SS, H // SS), Image.LANCZOS) for f in q]
+    small[0].save(out_path, save_all=True, append_images=small[1:],
+                  duration=duration, loop=0, optimize=True)
+
+
 # ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
