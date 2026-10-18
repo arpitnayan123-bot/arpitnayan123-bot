@@ -300,12 +300,53 @@ def compose_hero(width=896, height=260, name_fs=46, tag_fs=15, eye_fs=11.5):
 
 
 # ----------------------------------------------------------------------------
+# 2. Nebula footer
+# ----------------------------------------------------------------------------
+
+def compose_footer(width=896, height=150, main_fs=25, sub_fs=11.5):
+    rng = random.Random(SEED + 7)
+    W, H = width * SS, height * SS
+    cx = W / 2
+    body_y = int(H * 0.40)
+    main_y = int(H * 0.68)
+    sub_y = int(H * 0.85)
+
+    base = Image.new("RGBA", (W, H), BG_DEEP + (255,))
+    base.alpha_composite(v_gradient_rect((W, H), body_y, GLOW_BODY, BG_DEEP))
+
+    main_l, main_glow = text_layer((W, H), cx, main_y, FOOTER_MAIN,
+                                   font(main_fs), TITLE, spacing=3.5, glow=9)
+    sub_l, _ = text_layer((W, H), cx, sub_y, FOOTER_SUB,
+                          font(sub_fs, bold=False), SUBTITLE, spacing=1.5)
+
+    stars = build_stars(max(12, width // 46), W, int(H * 0.42), rng)
+
+    frames = []
+    for f in range(FRAMES):
+        fr = base.copy()
+        fr.alpha_composite(aurora_wave((W, H), int(H * 0.29), 10 * SS, W // 4, 4.0 * (W // 4) * f / FRAMES,
+                                       [(0, VIOLET), (1, BLUE)], 92))
+        fr.alpha_composite(aurora_wave((W, H), int(H * 0.35), 14 * SS, W // 2, 2.0 * (W // 2) * f / FRAMES,
+                                       [(0, BLUE), (1, VIOLET)], 150))
+        draw_stars(fr, stars, f, FRAMES)
+        fr.alpha_composite(scale_alpha(main_glow, 0.82 + 0.18 * math.sin(2 * math.pi * f / FRAMES)))
+        fr.alpha_composite(main_l)
+        fr.alpha_composite(sub_l)
+        frames.append(fr)
+
+    out = ASSETS / ("footer-nebula.gif" if width >= 800 else "footer-nebula-mobile.gif")
+    finalize(frames, out)
+    return out
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
 FILES = {
     "hero-aurora.gif": lambda: compose_hero(),
     "hero-aurora-mobile.gif": lambda: compose_hero(width=620, height=216, name_fs=31, tag_fs=13, eye_fs=10.5),
+    "footer-nebula.gif": lambda: compose_footer(),
 }
 
 
