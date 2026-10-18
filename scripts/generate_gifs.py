@@ -272,7 +272,7 @@ def build_stars(n, W, y_max, rng):
             "m": rng.choice((1, 2, 3)),
             "ph": rng.uniform(0, 2 * math.pi),
             "a": rng.uniform(36, 110),
-            "col": rng.choice((TITLE, BLUE_LT, VIOLET_LT)),
+            "col": rng.choice((CREAM, GOLD_LT, AMBER)),
         })
     return stars
 
@@ -367,10 +367,11 @@ def compose_footer(width=896, height=150, main_fs=25, sub_fs=11.5):
     base = Image.new("RGBA", (W, H), BG_DEEP + (255,))
     base.alpha_composite(v_gradient_rect((W, H), body_y, GLOW_BODY, BG_DEEP))
 
-    main_l, main_glow = text_layer((W, H), cx, main_y, FOOTER_MAIN,
-                                   font(main_fs), TITLE, spacing=3.5, glow=9)
+    main_l, main_glow = gradient_text_layer(
+        (W, H), cx, main_y, FOOTER_MAIN, font(main_fs),
+        [(0, GOLD_LT), (0.6, GOLD), (1, AMBER)], spacing=3.5, glow=10)
     sub_l, _ = text_layer((W, H), cx, sub_y, FOOTER_SUB,
-                          font(sub_fs, bold=False), SUBTITLE, spacing=1.5)
+                          font(sub_fs, bold=False), WARM_SOFT, spacing=1.5)
 
     stars = build_stars(max(12, width // 46), W, int(H * 0.42), rng)
 
@@ -378,9 +379,9 @@ def compose_footer(width=896, height=150, main_fs=25, sub_fs=11.5):
     for f in range(FRAMES):
         fr = base.copy()
         fr.alpha_composite(aurora_wave((W, H), int(H * 0.29), 10 * SS, W // 4, 4.0 * (W // 4) * f / FRAMES,
-                                       [(0, VIOLET), (1, BLUE)], 92))
+                                       [(0, AMBER), (1, GOLD)], 92))
         fr.alpha_composite(aurora_wave((W, H), int(H * 0.35), 14 * SS, W // 2, 2.0 * (W // 2) * f / FRAMES,
-                                       [(0, BLUE), (1, VIOLET)], 150))
+                                       [(0, GOLD_DEEP), (1, ORANGE)], 150))
         draw_stars(fr, stars, f, FRAMES)
         fr.alpha_composite(scale_alpha(main_glow, 0.82 + 0.18 * math.sin(2 * math.pi * f / FRAMES)))
         fr.alpha_composite(main_l)
