@@ -101,6 +101,14 @@ const arpit: Builder = {
 <br/>
 
 <div align="center">
+  <img src="assets/project-sanket.svg" width="100%" alt="Sanket — voice to FHIR clinical notes. A doctor's consultation voice becomes a structured clinical note, with voice reminders for patients, aligned with India's ABDM. Status: prototype."/>
+
+  [**→ repository**](https://github.com/arpitnayan123-bot/Sanket)
+</div>
+
+<br/>
+
+<div align="center">
   <img src="assets/project-healthtwin.svg" width="100%" alt="Personal Health Twin — consumer health exploration. A longitudinal health memory that organizes records and signals into a readable life view. In research and design, no code published yet. Status: concept."/>
 </div>
 
