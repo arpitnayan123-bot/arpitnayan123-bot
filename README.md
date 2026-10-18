@@ -86,3 +86,11 @@ An integrated healthcare operating system linking clinical workflows, pharmacy o
 </td></tr>
 </table>
 
+<table>
+<tr><td valign="top">
+
+### ◆ REA &nbsp;·&nbsp; AI Coding Agent &nbsp;·&nbsp; Software Intelligence
+
+> Autonomous coding agents are reshaping software engineering — I want to understand how they work, not just use them.
+
+I study real open-source software-engineering systems to understand their architecture, then build my own extensible coding agent — crediting the projects I learn from. Reverse engineering is how I teach myself systems thinking. This is the most demanding thing I'm working on, and the one I think about most.
