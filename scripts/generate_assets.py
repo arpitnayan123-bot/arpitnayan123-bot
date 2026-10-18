@@ -142,7 +142,7 @@ def typing_svg() -> str:
 
     return f"""{GENERATED_NOTE}
 <svg xmlns="http://www.w3.org/2000/svg" width="{TW}" height="{TH}" viewBox="0 0 {TW} {TH}" role="img" aria-label="Rotating phrases: {', '.join(PHRASES)}">
-  <style>.tp{{fill:#1F6FEB}} @media (prefers-color-scheme:dark) {{.tp{{fill:#7CB0FF}}}}</style>
+  <style>.tp{{fill:#B26B00}} @media (prefers-color-scheme:dark) {{.tp{{fill:#FFD24A}}}}</style>
   <defs>
 {chr(10).join(clips)}
   </defs>
