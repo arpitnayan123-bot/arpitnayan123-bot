@@ -63,7 +63,7 @@ const arpit: Builder = {
 ## Flagship Projects
 
 <div align="center">
-  <i>Five builds at a glance — brief on purpose, honest by design. Details live in the repos.</i>
+  <i>Seven builds at a glance — brief on purpose, honest by design. Details live in the repos.</i>
 </div>
 
 <br/>
