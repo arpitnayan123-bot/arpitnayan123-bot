@@ -27,7 +27,7 @@
 
 ## About
 
-<img align="right" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arpitnayan123-bot&theme=github_dark" width="390" alt="GitHub profile summary — commits, pull requests, issues and code reviews for arpitnayan123-bot"/>
+<img align="right" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arpitnayan123-bot&theme=gruvbox" width="390" alt="GitHub profile summary — commits, pull requests, issues and code reviews for arpitnayan123-bot"/>
 
 ```ts
 const arpit: Builder = {
@@ -166,17 +166,17 @@ Beyond the flagships, these are live experiments I'm learning from:
 
 <div align="center">
   <a href="https://github.com/arpitnayan123-bot" title="Repositories per language">
-    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arpitnayan123-bot&theme=github_dark" alt="Language distribution across arpitnayan123-bot's repositories"/>
+    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arpitnayan123-bot&theme=gruvbox" alt="Language distribution across arpitnayan123-bot's repositories"/>
   </a>
   <a href="https://github.com/arpitnayan123-bot" title="Productive time">
-    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=arpitnayan123-bot&theme=github_dark" alt="Commit activity by time of day for arpitnayan123-bot"/>
+    <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=arpitnayan123-bot&theme=gruvbox" alt="Commit activity by time of day for arpitnayan123-bot"/>
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=true&background=0D1117&ring=1F6FEB&fire=8B5CF6&currStreakLabel=58A6FF&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=C9D1D9&dates=8B949E" alt="Contribution streak — current and longest streaks for arpitnayan123-bot"/>
+  <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=false&border_radius=8&background=0F0D16&border=2E2740&ring=FFB454&fire=FF8C42&currStreakLabel=FFC93C&currStreakNum=FFFFFF&sideNums=E8DCC4&sideLabels=C9B896&dates=9A8C74" alt="Contribution streak — current and longest streaks for arpitnayan123-bot"/>
 </div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
