@@ -41,3 +41,13 @@ to complete static images if a renderer ignores SMIL.
 
 The header and footer ship in two sizes and are switched with a standard
 `<picture>` + `max-width` media query so text stays readable on phones.
+
+## Regenerating the assets
+
+```bash
+python3 scripts/generate_assets.py
+```
+
+The generator writes all seven SVGs from the tokens and content lists at the
+top of the script. To change the typing phrases, edit `PHRASES`. To change
+the terminal session, edit `TERMINAL_LINES`. Commit the regenerated files.
