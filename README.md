@@ -111,3 +111,7 @@ I study real open-source software-engineering systems to understand their archit
 > Medical students drown in scattered resources — Medulla turns the curriculum into one connected map.
 
 A learning platform for medical students: a knowledge map of the MBBS curriculum, first-principles lessons, spaced revision, question practice, and clinical cases. Built to make medical learning organized and interactive rather than fragmented.
+
+<img src="https://img.shields.io/badge/Next.js_16-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js 16"/>
+<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Prisma-1B2540?style=flat-square&logo=prisma&logoColor=8B5CF6" alt="Prisma"/>
