@@ -55,3 +55,11 @@ const arpit: Builder = {
 <br clear="right"/>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
+
+## Flagship Projects
+
+<div align="center">
+  <i>What I'm building — honestly labeled by status. Everything real, nothing inflated.</i>
+</div>
+
+<br/>
