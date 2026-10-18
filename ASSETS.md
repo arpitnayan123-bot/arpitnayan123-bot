@@ -51,12 +51,16 @@ at any scale.
 ## Regenerating the assets
 
 ```bash
-python3 scripts/generate_assets.py
+python3 scripts/generate_assets.py   # vector animations (typing, terminal, divider)
+python3 scripts/generate_gifs.py     # rendered GIFs (hero, footer) - requires Pillow
 ```
 
-The generator writes all seven SVGs from the tokens and content lists at the
-top of the script. To change the typing phrases, edit `PHRASES`. To change
-the terminal session, edit `TERMINAL_LINES`. Commit the regenerated files.
+The vector generator writes its three SVGs from the tokens and content lists
+at the top of the script — edit `PHRASES` for the typing strip and
+`TERMINAL_LINES` for the terminal session. The GIF generator renders at 2x
+and writes four looping GIFs; edit `NAME`, `TAGLINE` or the `FOOTER_*` lines
+there. Both scripts share the same design tokens — keep them in sync, then
+commit the regenerated files.
 
 ## GitHub Actions workflows
 
