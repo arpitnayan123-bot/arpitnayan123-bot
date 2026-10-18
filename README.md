@@ -226,3 +226,8 @@ Beyond the flagships, these are live experiments I'm learning from:
 <div align="center">
   <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=true&background=0D1117&ring=1F6FEB&fire=8B5CF6&currStreakLabel=58A6FF&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=C9D1D9&dates=8B949E" alt="Contribution streak — current and longest streaks for arpitnayan123-bot"/>
 </div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 3D Contribution Calendar
+
