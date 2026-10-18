@@ -63,3 +63,12 @@ const arpit: Builder = {
 </div>
 
 <br/>
+
+<table>
+<tr><td valign="top">
+
+### ◆ Nexura OS &nbsp;·&nbsp; Healthcare Operating System
+
+> Clinics, pharmacies, and patient experiences today run on disconnected software — Nexura OS connects them on one platform.
+
+An integrated healthcare operating system linking clinical workflows, pharmacy operations, patient portals, and AI-assisted health tools on a shared platform layer. This is my primary project — where I'm learning what it actually takes to design, build, and operate a serious multi-product system.
