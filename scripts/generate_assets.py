@@ -441,6 +441,21 @@ PROJECTS: list[dict] = [
             (VIOLET, 200, 150, 105, 0.30, 10, -10, 18),
         ],
     },
+    {
+        "file": "project-conclave.svg",
+        "mono": "C",
+        "name": "Conclave",
+        "category": "IIT FOUNDER & BUILDER NETWORK",
+        "brief": "An invite-only room where IIT student builders share work, review and find collaborators.",
+        "tech": "TypeScript · Next.js",
+        "status": "EARLY BUILD",
+        "dot": AMBER,
+        "accent": VIOLET_LT,
+        "blobs": [
+            (VIOLET_LT, 715, 40, 92, 0.36, 10, 10, 13),
+            (ORANGE, 195, 145, 100, 0.28, -10, -8, 16),
+        ],
+    },
 ]
 
 
