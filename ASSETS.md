@@ -20,3 +20,16 @@ Typography is a system monospace stack (`ui-monospace, SFMono-Regular, Menlo,
 Consolas, monospace`) — GitHub renders `<img>` SVGs in an isolated document,
 so external web fonts are not an option and system monospace keeps the
 terminal aesthetic consistent across platforms.
+
+## Assets
+
+| File | Role |
+| --- | --- |
+| `assets/header-hero.svg` | animated hero header (desktop, 896×260) |
+| `assets/header-hero-mobile.svg` | compact hero served on narrow screens |
+| `assets/typing.svg` | rotating typewriter phrases (SMIL clip reveal) |
+| `assets/terminal.svg` | decorative developer terminal with blinking cursor |
+| `assets/footer-banner.svg` | closing wave banner — "Learn. Build. Iterate." |
+| `assets/footer-banner-mobile.svg` | compact footer for narrow screens |
+| `assets/divider.svg` | section separator with a slow traveling glint |
+| `profile-3d-settings.json` | custom palette for the 3D contribution graph |
