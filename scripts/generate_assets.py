@@ -396,6 +396,21 @@ PROJECTS: list[dict] = [
             (VIOLET, 180, 150, 110, 0.34, -12, -8, 15),
         ],
     },
+    {
+        "file": "project-rea.svg",
+        "mono": "R",
+        "name": "REA",
+        "category": "AI CODING AGENT · SOFTWARE INTELLIGENCE",
+        "brief": "My own extensible AI coding agent — built by studying how real agent systems work.",
+        "tech": "source private — happy to walk through the design",
+        "status": "ACTIVE · PRIVATE",
+        "dot": VIOLET_LT,
+        "accent": ORANGE,
+        "blobs": [
+            (ORANGE, 720, 60, 90, 0.40, -10, 12, 13),
+            (GOLD, 200, 140, 100, 0.30, 10, -10, 16),
+        ],
+    },
 ]
 
 
