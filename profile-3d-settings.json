@@ -1,31 +1,17 @@
 {
   "type": "normal",
   "fileName": "profile-gilded.svg",
-  "backgroundColor": "#FFFFFF",
-  "foregroundColor": "#24292F",
-  "strongColor": "#B9770E",
-  "weakColor": "#57606A",
-  "radarColor": "#E8A020",
+  "backgroundColor": "#110E19",
+  "foregroundColor": "#F2E9D8",
+  "strongColor": "#FFC93C",
+  "weakColor": "#96886F",
+  "radarColor": "#FFB454",
   "growingAnimation": true,
   "contribColors": [
-    "#EDE7D9",
-    "#EFD9A0",
-    "#E5BC55",
-    "#DB9A1E",
-    "#C67C00"
-  ],
-  "darkMode": {
-    "backgroundColor": "#110E19",
-    "foregroundColor": "#F2E9D8",
-    "strongColor": "#FFC93C",
-    "weakColor": "#96886F",
-    "radarColor": "#FFB454",
-    "contribColors": [
-      "#1D1826",
-      "#3F3214",
-      "#8A6414",
-      "#D6951F",
-      "#FFC93C"
-    ]
-  }
+    "#1D1826",
+    "#3F3214",
+    "#8A6414",
+    "#D6951F",
+    "#FFC93C"
+  ]
 }
