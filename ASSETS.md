@@ -39,6 +39,7 @@ tech — so the section reads at a glance and the details stay in the repos.
 | `assets/typing.svg` | rotating typewriter phrases (SMIL clip reveal, amber in both themes) |
 | `assets/terminal.svg` | decorative developer terminal with blinking gold cursor |
 | `assets/mantra.svg` | frosted mantra strip — breathing gold gradient text |
+| `assets/activity-header.svg` | frosted contribution banner — breathing ramp cells, gold gradient title |
 | `assets/project-nexura.svg` | glassmorphism card — Nexura OS (healthcare operating system) |
 | `assets/project-rea.svg` | glassmorphism card — REA (AI coding agent, private) |
 | `assets/project-medulla.svg` | glassmorphism card — Medulla (medical learning OS) |
