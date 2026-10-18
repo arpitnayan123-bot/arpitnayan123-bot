@@ -181,3 +181,6 @@ Beyond the flagships, these are live experiments I'm learning from:
 
 <img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/JavaScript-1B2540?style=flat-square&logo=javascript&logoColor=58A6FF" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/Next.js-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js"/>
+<img src="https://img.shields.io/badge/React-1B2540?style=flat-square&logo=react&logoColor=58A6FF" alt="React"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-1B2540?style=flat-square&logo=tailwindcss&logoColor=58A6FF" alt="Tailwind CSS"/>
