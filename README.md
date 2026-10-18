@@ -94,3 +94,8 @@ An integrated healthcare operating system linking clinical workflows, pharmacy o
 > Autonomous coding agents are reshaping software engineering — I want to understand how they work, not just use them.
 
 I study real open-source software-engineering systems to understand their architecture, then build my own extensible coding agent — crediting the projects I learn from. Reverse engineering is how I teach myself systems thinking. This is the most demanding thing I'm working on, and the one I think about most.
+
+<img src="https://img.shields.io/badge/%E2%97%8F_Active_Build-1F6FEB?style=flat-square&labelColor=0D1117" alt="Status: active build"/>
+<img src="https://img.shields.io/badge/Source_Private-30363D?style=flat-square&labelColor=0D1117" alt="Source: private repository"/>
+
+*Repository is private while the foundation sets — happy to walk through the design.*
