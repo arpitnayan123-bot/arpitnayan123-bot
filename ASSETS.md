@@ -25,12 +25,12 @@ terminal aesthetic consistent across platforms.
 
 | File | Role |
 | --- | --- |
-| `assets/header-hero.svg` | animated hero header (desktop, 896×260) |
-| `assets/header-hero-mobile.svg` | compact hero served on narrow screens |
+| `assets/hero-aurora.gif` | live aurora hero — waves, particles, pulsing glow (desktop, 896×260) |
+| `assets/hero-aurora-mobile.gif` | compact aurora hero served on narrow screens |
 | `assets/typing.svg` | rotating typewriter phrases (SMIL clip reveal) |
 | `assets/terminal.svg` | decorative developer terminal with blinking cursor |
-| `assets/footer-banner.svg` | closing wave banner — "Learn. Build. Iterate." |
-| `assets/footer-banner-mobile.svg` | compact footer for narrow screens |
+| `assets/footer-nebula.gif` | closing nebula banner — twinkling stars — "Learn. Build. Iterate." |
+| `assets/footer-nebula-mobile.gif` | compact nebula footer for narrow screens |
 | `assets/divider.svg` | section separator with a slow traveling glint |
 | `profile-3d-settings.json` | custom palette for the 3D contribution graph |
 
