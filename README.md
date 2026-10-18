@@ -182,12 +182,6 @@ const arpit: Builder = {
   </a>
 </div>
 
-<br/>
-
-<div align="center">
-  <img width="98%" src="https://streak-stats.demolab.com?user=arpitnayan123-bot&hide_border=false&border_radius=8&background=0F0D16&border=2E2740&ring=FFB454&fire=FF8C42&currStreakLabel=FFC93C&currStreakNum=FFFFFF&sideNums=E8DCC4&sideLabels=C9B896&dates=9A8C74" alt="Contribution streak — current and longest streaks for arpitnayan123-bot"/>
-</div>
-
 <img src="assets/divider.svg" width="100%" alt=""/>
 
 ## 3D Contribution Calendar
