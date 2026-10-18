@@ -205,12 +205,81 @@ def header_svg(
 
 
 # ----------------------------------------------------------------------------
+# 2. Typing animation
+# ----------------------------------------------------------------------------
+
+PHRASES = [
+    "Building AI-powered products",
+    "Exploring autonomous coding agents",
+    "Developing healthcare intelligence",
+    "Engineering software systems",
+    "Learning and building as an aspiring founder",
+]
+
+TW, TH = 600, 56
+T_FS = 20
+CHAR_W = 12.0          # monospace advance width at 20px
+HOLD = 1.7             # seconds each phrase stays fully visible
+
+
+def typing_svg() -> str:
+    slots = []
+    for p in PHRASES:
+        t_in = min(2.4, max(1.0, len(p) * 0.048))
+        t_out = min(t_in, 1.0)
+        slots.append((p, t_in, t_out))
+    total = sum(t + HOLD + o for _, t, o in slots)
+
+    groups, clips = [], []
+    cursor = 0.0
+    for i, (phrase, t_in, t_out) in enumerate(slots):
+        w = len(phrase) * CHAR_W + 10
+        x = (TW - w) / 2.0
+        f0 = cursor / total
+        f1 = (cursor + t_in) / total
+        f2 = (cursor + t_in + HOLD) / total
+        f3 = (cursor + t_in + HOLD + t_out) / total
+        # strictly increasing keyTimes, clamped to [0, 1]
+        f1, f2, f3 = min(f1, 0.999), min(f2, 0.9995), min(f3, 0.9999)
+        keytimes = f"0;{f0:.4f};{f1:.4f};{f2:.4f};{f3:.4f};1"
+        initial = w if i == 0 else 0  # static fallback shows the first phrase
+        clips.append(
+            f'  <clipPath id="tp{i}"><rect x="{x:.1f}" y="6" width="{initial:.1f}" height="44">'
+            f'<animate attributeName="width" calcMode="linear" '
+            f'values="0;0;{w:.1f};{w:.1f};0;0" keyTimes="{keytimes}" '
+            f'dur="{total:.2f}s" repeatCount="indefinite"/></rect></clipPath>'
+        )
+        groups.append(
+            f'  <g clip-path="url(#tp{i})">'
+            f'<text x="{TW / 2:.0f}" y="35" text-anchor="middle" font-family="{MONO}" '
+            f'font-size="{T_FS}" font-weight="600" letter-spacing="0.5" '
+            f'class="tp">{escape(phrase)}</text></g>'
+        )
+        cursor += t_in + HOLD + t_out
+
+    return f"""{GENERATED_NOTE}
+<svg xmlns="http://www.w3.org/2000/svg" width="{TW}" height="{TH}" viewBox="0 0 {TW} {TH}" role="img" aria-label="Rotating phrases: {', '.join(PHRASES)}">
+  <style>.tp{{fill:#1F6FEB}} @media (prefers-color-scheme:dark) {{.tp{{fill:#7CB0FF}}}}</style>
+  <defs>
+{chr(10).join(clips)}
+  </defs>
+{chr(10).join(groups)}
+</svg>
+"""
+
+
+def escape(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
 FILES = {
     # desktop variants
     "header-hero.svg": lambda: header_svg(),
+    "typing.svg": typing_svg,
 }
 
 
