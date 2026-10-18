@@ -133,3 +133,7 @@ A learning platform for medical students: a knowledge map of the MBBS curriculum
 An exploratory consumer-health concept: a longitudinal personal health memory that organizes records, signals, and notes over time, gradually forming a personal health representation that helps people see what is changing and why. Currently in research and design — no code published yet, by design.
 
 <img src="https://img.shields.io/badge/%E2%97%8F_Concept-6E7681?style=flat-square&labelColor=0D1117" alt="Status: concept stage"/>
+
+</td></tr>
+</table>
+
