@@ -54,6 +54,10 @@ const arpit: Builder = {
 
 <br clear="right"/>
 
+<div align="center">
+  <img src="assets/mantra.svg" width="100%" alt="Personal mantra — learn relentlessly, build honestly, iterate"/>
+</div>
+
 <img src="assets/divider.svg" width="100%" alt=""/>
 
 ## Flagship Projects
