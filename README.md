@@ -24,3 +24,7 @@
 </div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
+
+## About
+
+<img align="right" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arpitnayan123-bot&theme=github_dark" width="390" alt="GitHub profile summary — commits, pull requests, issues and code reviews for arpitnayan123-bot"/>
