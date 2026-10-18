@@ -255,3 +255,5 @@ Beyond the flagships, these are live experiments I'm learning from:
 ## Let's Build Together
 
 <div align="center">
+
+I'm open to collaborating on **AI-powered products**, **developer tools and coding agents**, **healthcare AI**, and **ambitious early-stage ideas** — especially where software systems meet real problems.
