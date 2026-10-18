@@ -179,14 +179,7 @@ Beyond the flagships, these are live experiments I'm learning from:
 
 **used in my projects**
 
-<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/JavaScript-1B2540?style=flat-square&logo=javascript&logoColor=58A6FF" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/Next.js-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js"/>
-<img src="https://img.shields.io/badge/React-1B2540?style=flat-square&logo=react&logoColor=58A6FF" alt="React"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-1B2540?style=flat-square&logo=tailwindcss&logoColor=58A6FF" alt="Tailwind CSS"/>
-<img src="https://img.shields.io/badge/Prisma-1B2540?style=flat-square&logo=prisma&logoColor=8B5CF6" alt="Prisma"/>
-<img src="https://img.shields.io/badge/PostgreSQL-1B2540?style=flat-square&logo=postgresql&logoColor=8B5CF6" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/Git-1B2540?style=flat-square&logo=git&logoColor=8B5CF6" alt="Git"/>
+<img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,prisma,postgres,git&theme=dark&perline=8" alt="TypeScript, JavaScript, Next.js, React, Tailwind CSS, Prisma, PostgreSQL and Git"/>
 
 <br/><br/>
 
