@@ -34,14 +34,20 @@ tech — so the section reads at a glance and the details stay in the repos.
 
 | File | Role |
 | --- | --- |
-| `assets/hero-aurora.gif` | live aurora hero — waves, particles, pulsing glow (desktop, 896×260) |
+| `assets/hero-aurora.gif` | live gilded aurora hero — gold waves, warm particles, pulsing glow (desktop, 896×260) |
 | `assets/hero-aurora-mobile.gif` | compact aurora hero served on narrow screens |
-| `assets/typing.svg` | rotating typewriter phrases (SMIL clip reveal) |
-| `assets/terminal.svg` | decorative developer terminal with blinking cursor |
-| `assets/footer-nebula.gif` | closing nebula banner — twinkling stars — "Learn. Build. Iterate." |
+| `assets/typing.svg` | rotating typewriter phrases (SMIL clip reveal, amber in both themes) |
+| `assets/terminal.svg` | decorative developer terminal with blinking gold cursor |
+| `assets/mantra.svg` | frosted mantra strip — breathing gold gradient text |
+| `assets/project-nexura.svg` | glassmorphism card — Nexura OS (healthcare operating system) |
+| `assets/project-rea.svg` | glassmorphism card — REA (AI coding agent, private) |
+| `assets/project-medulla.svg` | glassmorphism card — Medulla (medical learning OS) |
+| `assets/project-healthtwin.svg` | glassmorphism card — Personal Health Twin (concept) |
+| `assets/project-conclave.svg` | glassmorphism card — Conclave (IIT founder network) |
+| `assets/footer-nebula.gif` | closing golden nebula banner — twinkling stars — "Learn. Build. Iterate." |
 | `assets/footer-nebula-mobile.gif` | compact nebula footer for narrow screens |
-| `assets/divider.svg` | section separator with a slow traveling glint |
-| `profile-3d-settings.json` | custom palette for the 3D contribution graph |
+| `assets/divider.svg` | section separator with a slow traveling gold glint |
+| `profile-3d-settings.json` | custom gold palette for the 3D contribution graph (`profile-gilded.svg`) |
 
 All custom visuals are self-hosted (no third-party generators), script-free,
 and use SMIL animations that render inside GitHub's `<img>` pipeline. Every
@@ -60,23 +66,24 @@ at any scale.
 ## Regenerating the assets
 
 ```bash
-python3 scripts/generate_assets.py   # vector animations (typing, terminal, divider)
+python3 scripts/generate_assets.py   # vector animations + glass cards (requires nothing)
 python3 scripts/generate_gifs.py     # rendered GIFs (hero, footer) - requires Pillow
 ```
 
-The vector generator writes its three SVGs from the tokens and content lists
-at the top of the script — edit `PHRASES` for the typing strip and
-`TERMINAL_LINES` for the terminal session. The GIF generator renders at 2x
-and writes four looping GIFs; edit `NAME`, `TAGLINE` or the `FOOTER_*` lines
-there. Both scripts share the same design tokens — keep them in sync, then
-commit the regenerated files.
+The vector generator writes its three animated SVGs, the mantra strip and
+the five glass project cards from the tokens and content lists at the top of
+the script — edit `PHRASES` for the typing strip, `TERMINAL_LINES` for the
+terminal session and the `PROJECTS` list for the glass cards. The GIF
+generator renders at 2x and writes four looping GIFs; edit `NAME`,
+`TAGLINE_SEGMENTS` or the `FOOTER_*` lines there. Both scripts share the
+same design tokens — keep them in sync, then commit the regenerated files.
 
 ## GitHub Actions workflows
 
 | Workflow | What it does | Schedule |
 | --- | --- | --- |
-| `snake.yml` | renders the contribution snake (light + dark) and pushes it to the `output` branch | daily 00:00 UTC |
-| `profile-3d.yml` | generates the 3D contribution calendar — standard palettes plus the custom `profile-blueviolet.svg` from `profile-3d-settings.json` | weekly, Sunday 18:00 UTC |
+| `snake.yml` | renders the gold contribution snake (light + dark) and pushes it to the `output` branch | daily 00:00 UTC |
+| `profile-3d.yml` | generates the 3D contribution calendar — standard palettes plus the custom `profile-gilded.svg` from `profile-3d-settings.json` | weekly, Sunday 18:00 UTC |
 
 Both workflows use least-privilege `contents: write` permissions, a
 `concurrency` group (so overlapping runs cannot clobber each other), and only
@@ -85,7 +92,7 @@ stored.
 
 ### One-time manual step
 
-The README's 3D section references `profile-blueviolet.svg`, which appears
+The README's 3D section references `profile-gilded.svg`, which appears
 after the first workflow run. Trigger it once:
 
 > **Actions → Generate 3D Contribution Graph → Run workflow**
@@ -97,8 +104,10 @@ render, so the profile never shows a broken image.
 
 - The account **profile bio** is set in GitHub settings (not in this repo);
   keep it aligned with the positioning in this README.
-- Third-party analytics (summary cards, streak stats, profile views) are
-  optional enhancements — if any of them go down, the rest of the profile is
-  unaffected because every custom visual is self-hosted.
+- Third-party analytics (GitHub stats, top languages, streak stats, gruvbox
+  summary cards, profile views) are optional enhancements — if any of them
+  go down, the rest of the profile is unaffected because every custom visual
+  is self-hosted. The trophy service was returning 402 during the gilded
+  redesign, so it is deliberately not used.
 - Project badges only list technologies that are actually used in the linked
   repositories; update them if the projects change.
