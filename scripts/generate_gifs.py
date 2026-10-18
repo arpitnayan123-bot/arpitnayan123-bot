@@ -347,6 +347,7 @@ FILES = {
     "hero-aurora.gif": lambda: compose_hero(),
     "hero-aurora-mobile.gif": lambda: compose_hero(width=620, height=216, name_fs=31, tag_fs=13, eye_fs=10.5),
     "footer-nebula.gif": lambda: compose_footer(),
+    "footer-nebula-mobile.gif": lambda: compose_footer(width=620, height=124, main_fs=20, sub_fs=10),
 }
 
 
