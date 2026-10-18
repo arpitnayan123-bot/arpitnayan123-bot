@@ -187,3 +187,12 @@ Beyond the flagships, these are live experiments I'm learning from:
 <img src="https://img.shields.io/badge/Prisma-1B2540?style=flat-square&logo=prisma&logoColor=8B5CF6" alt="Prisma"/>
 <img src="https://img.shields.io/badge/PostgreSQL-1B2540?style=flat-square&logo=postgresql&logoColor=8B5CF6" alt="PostgreSQL"/>
 <img src="https://img.shields.io/badge/Git-1B2540?style=flat-square&logo=git&logoColor=8B5CF6" alt="Git"/>
+
+<br/><br/>
+
+**currently learning**
+
+<img src="https://img.shields.io/badge/Python-1B2540?style=flat-square&logo=python&logoColor=8B5CF6" alt="Python — learning"/>
+<img src="https://img.shields.io/badge/LLM_APIs_%26_App_Patterns-1B2540?style=flat-square&logo=openai&logoColor=8B5CF6" alt="LLM APIs and application patterns — learning"/>
+<img src="https://img.shields.io/badge/Agent_Architectures-1B2540?style=flat-square&logo=githubcopilot&logoColor=8B5CF6" alt="Agent architectures — learning"/>
+<img src="https://img.shields.io/badge/Testing_%7C_Vitest_%C2%B7_Playwright-1B2540?style=flat-square&logo=vitest&logoColor=8B5CF6" alt="Testing with Vitest and Playwright"/>
