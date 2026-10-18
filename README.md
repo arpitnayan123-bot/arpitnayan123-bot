@@ -16,3 +16,5 @@
 <img src="https://img.shields.io/badge/IIT_Jodhpur-BS_Management_%26_Technology-1F6FEB?style=flat-square&labelColor=0D1117" alt="IIT Jodhpur — BS in Management &amp; Technology"/>
 &nbsp;
 <img src="https://img.shields.io/badge/IIT_Madras-BS_Data_Science_%26_Applications-A371F7?style=flat-square&labelColor=0D1117" alt="IIT Madras — BS in Data Science and Applications"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Focus-AI_%C3%97_Healthcare_%C3%97_Software_Systems-58A6FF?style=flat-square&labelColor=0D1117" alt="Focus — AI, healthcare, software systems"/>
