@@ -145,3 +145,6 @@ An exploratory consumer-health concept: a longitudinal personal health memory th
 > Serious student builders need a room without noise.
 
 The early implementation of my IIT-focused founder-network idea: an invite-only space where entrepreneurial students share what they're building, review each other's work, and meet potential collaborators through a review-and-invitation process.
+
+<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Next.js-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js"/>
