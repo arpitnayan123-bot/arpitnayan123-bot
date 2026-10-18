@@ -177,6 +177,40 @@ def gradient_bar(size, cx, cy, w, h):
 
 
 # ----------------------------------------------------------------------------
+# Motion element builders
+# ----------------------------------------------------------------------------
+
+def build_particles(n, W, H, rng):
+    """Particles rising exactly k screen-heights per loop -> seamless."""
+    parts = []
+    palette = [BLUE_LT, VIOLET_LT, TITLE, BLUE_MID]
+    for i in range(n):
+        parts.append({
+            "x0": rng.uniform(0, W),
+            "y0": rng.uniform(0, H),
+            "k": rng.choice((1, 1, 2)),
+            "sway": rng.uniform(3, 8) * SS,
+            "m_sway": rng.choice((1, 2)),
+            "m_tw": rng.choice((1, 2, 3)),
+            "ph": rng.uniform(0, 2 * math.pi),
+            "r": rng.uniform(1.0, 2.4) * SS,
+            "col": palette[i % len(palette)],
+            "a": rng.uniform(26, 88),
+        })
+    return parts
+
+
+def draw_particles(layer, parts, t, F, W, H):
+    d = ImageDraw.Draw(layer)
+    for p in parts:
+        y = (p["y0"] - p["k"] * (t / F) * H) % H
+        x = p["x0"] + p["sway"] * math.sin(2 * math.pi * p["m_sway"] * t / F + p["ph"])
+        a = p["a"] * (0.72 + 0.28 * math.sin(2 * math.pi * p["m_tw"] * t / F + p["ph"]))
+        d.ellipse([x - p["r"], y - p["r"], x + p["r"], y + p["r"]],
+                  fill=p["col"] + (int(a),))
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
