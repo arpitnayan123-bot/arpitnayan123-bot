@@ -417,6 +417,36 @@ def footer_svg(width: int = 896, height: int = 150, main_fs: int = 25, sub_fs: f
 
 
 # ----------------------------------------------------------------------------
+# 5. Section divider
+# ----------------------------------------------------------------------------
+
+DW, DH = 896, 24
+
+
+def divider_svg() -> str:
+    x0, x1 = 148, DW - 148
+    span = x1 - x0
+    return f"""{GENERATED_NOTE}
+<svg xmlns="http://www.w3.org/2000/svg" width="{DW}" height="{DH}" viewBox="0 0 {DW} {DH}" role="img" aria-label="Section divider">
+  <defs>
+    {lin_grad("dline", [(0, BLUE, 0), (0.3, BLUE, 0.85), (0.7, VIOLET, 0.85), (1, VIOLET, 0)])}
+  </defs>
+
+  <rect x="{x0}" y="{DH / 2 - 0.8}" width="{span}" height="1.6" rx="0.8" fill="url(#dline)"/>
+  <rect x="{x0}" y="{DH / 2 - 1.4}" width="64" height="2.8" rx="1.4" fill="#9EC1FF" opacity="0.5">
+    <animate attributeName="x" calcMode="linear"
+      values="{x0};{x1 - 64};{x0}" keyTimes="0;0.5;1"
+      dur="6.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" calcMode="linear"
+      values="0.05;0.55;0.05" keyTimes="0;0.5;1"
+      dur="6.5s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="{DW / 2}" cy="{DH / 2}" r="2.2" fill="{VIOLET_LT}" opacity="0.85"/>
+</svg>
+"""
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
@@ -426,6 +456,7 @@ FILES = {
     "typing.svg": typing_svg,
     "terminal.svg": terminal_svg,
     "footer-banner.svg": lambda: footer_svg(),
+    "divider.svg": divider_svg,
 }
 
 
