@@ -299,45 +299,6 @@ def terminal_svg() -> str:
 
 
 # ----------------------------------------------------------------------------
-# 4. Footer banner
-# ----------------------------------------------------------------------------
-
-FOOTER_MAIN = "Learn. Build. Iterate."
-FOOTER_SUB = "AI products \u00b7 healthcare technology \u00b7 software systems"
-FW, FH = 896, 150
-
-
-def footer_svg(width: int = 896, height: int = 150, main_fs: int = 25, sub_fs: float = 11.5) -> str:
-    FW, FH = width, height
-    cx = FW / 2
-    # periods divide FW; bodies extend to the canvas bottom (no seam)
-    wave_top = wave_path(FW, FH * 0.35, 14, FW // 2, bottom=FH)
-    wave_top2 = wave_path(FW, FH * 0.29, 10, FW // 4, bottom=FH)
-    body_y = int(FH * 0.40)
-    main_y = int(FH * 0.68)
-    sub_y = int(FH * 0.85)
-
-    return f"""{GENERATED_NOTE}
-<svg xmlns="http://www.w3.org/2000/svg" width="{FW}" height="{FH}" viewBox="0 0 {FW} {FH}" role="img" aria-label="Footer: Learn. Build. Iterate. - AI products, healthcare technology, software systems">
-  <defs>
-    {lin_grad("fbody", [(0, "#101A33"), (1, BG_DEEP)], x2="0%", y2="100%")}
-    {lin_grad("fw1", [(0, BLUE, 0.60), (1, VIOLET, 0.60)])}
-    {lin_grad("fw2", [(0, VIOLET, 0.35), (1, BLUE, 0.35)])}
-  </defs>
-
-  <rect y="{body_y}" width="{FW}" height="{FH - body_y}" fill="url(#fbody)"/>
-  {wave_layer(wave_top2, FW, "17s", "fw2", 1.0)}
-  {wave_layer(wave_top, FW, "11s", "fw1", 1.0)}
-
-  <text x="{cx}" y="{main_y}" text-anchor="middle" font-family="{MONO}" font-size="{main_fs}"
-        font-weight="700" letter-spacing="3.5" fill="#F0F6FC">{escape(FOOTER_MAIN)}</text>
-  <text x="{cx}" y="{sub_y}" text-anchor="middle" font-family="{MONO}" font-size="{sub_fs}"
-        letter-spacing="1.5" fill="{SUBTITLE}">{escape(FOOTER_SUB)}</text>
-</svg>
-"""
-
-
-# ----------------------------------------------------------------------------
 # 5. Section divider
 # ----------------------------------------------------------------------------
 
@@ -373,7 +334,6 @@ def divider_svg() -> str:
 FILES = {
     "typing.svg": typing_svg,
     "terminal.svg": terminal_svg,
-    "footer-banner.svg": lambda: footer_svg(),
     "divider.svg": divider_svg,
 }
 
