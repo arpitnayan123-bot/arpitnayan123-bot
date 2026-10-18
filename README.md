@@ -28,3 +28,20 @@
 ## About
 
 <img align="right" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=arpitnayan123-bot&theme=github_dark" width="390" alt="GitHub profile summary — commits, pull requests, issues and code reviews for arpitnayan123-bot"/>
+
+```ts
+const arpit: Builder = {
+  studying: [
+    "IIT Jodhpur — BS in Management & Technology",
+    "IIT Madras — BS in Data Science and Applications",
+  ],
+  building: ["Nexura OS", "REA — coding agent", "Medulla"],
+  exploring: [
+    "healthcare AI",
+    "personal health memory",
+    "software intelligence",
+  ],
+  mindset: "learn relentlessly · build honestly · iterate",
+  openTo: ["AI products", "dev tools", "healthcare tech"],
+};
+```
