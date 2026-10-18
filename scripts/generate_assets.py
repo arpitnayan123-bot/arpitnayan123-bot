@@ -58,8 +58,6 @@ VIOLET_LT = "#A78BFA"    # light violet
 TEXT = "#F2E9D8"         # warm primary text
 TEXT_SOFT = "#D9CDB4"    # warm secondary text
 FAINT = "#96886F"        # warm faint text
-BLUE = "#1F6FEB"         # (legacy) electric blue
-BLUE_LT = "#58A6FF"      # (legacy) light blue
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
@@ -271,11 +269,11 @@ def divider_svg() -> str:
     return f"""{GENERATED_NOTE}
 <svg xmlns="http://www.w3.org/2000/svg" width="{DW}" height="{DH}" viewBox="0 0 {DW} {DH}" role="img" aria-label="Section divider">
   <defs>
-    {lin_grad("dline", [(0, BLUE, 0), (0.3, BLUE, 0.85), (0.7, VIOLET, 0.85), (1, VIOLET, 0)])}
+    {lin_grad("dline", [(0, GOLD, 0), (0.3, GOLD, 0.85), (0.7, AMBER, 0.85), (1, AMBER, 0)])}
   </defs>
 
   <rect x="{x0}" y="{DH / 2 - 0.8}" width="{span}" height="1.6" rx="0.8" fill="url(#dline)"/>
-  <rect x="{x0}" y="{DH / 2 - 1.4}" width="64" height="2.8" rx="1.4" fill="#9EC1FF" opacity="0.5">
+  <rect x="{x0}" y="{DH / 2 - 1.4}" width="64" height="2.8" rx="1.4" fill="{GOLD_LT}" opacity="0.5">
     <animate attributeName="x" calcMode="linear"
       values="{x0};{x1 - 64};{x0}" keyTimes="0;0.5;1"
       dur="6.5s" repeatCount="indefinite"/>
@@ -283,7 +281,7 @@ def divider_svg() -> str:
       values="0.05;0.55;0.05" keyTimes="0;0.5;1"
       dur="6.5s" repeatCount="indefinite"/>
   </rect>
-  <circle cx="{DW / 2}" cy="{DH / 2}" r="2.2" fill="{VIOLET_LT}" opacity="0.85"/>
+  <circle cx="{DW / 2}" cy="{DH / 2}" r="2.2" fill="{GOLD_LT}" opacity="0.85"/>
 </svg>
 """
 
