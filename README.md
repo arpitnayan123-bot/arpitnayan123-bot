@@ -128,13 +128,6 @@ const arpit: Builder = {
   <img src="assets/terminal.svg" width="100%" alt="Developer terminal — whoami: Arpit Nayan · interests: AI, Healthcare, Software Engineering · exploring: Autonomous Coding Agents · building: Healthcare Intelligence Systems"/>
 </div>
 
-Beyond the flagships, these are live experiments I'm learning from:
-
-| &nbsp; | Project | Status | What it explores |
-| --- | --- | --- | --- |
-| 🧪 | [Aarogya AI](https://github.com/arpitnayan123-bot/AAROGYA-AI) | Experiment | AI health-intelligence platform — lab analysis, Ayurveda, ABDM-aligned health records · [live preview](https://aarogya-ai.space-z.ai) |
-| 🧪 | [Sanket](https://github.com/arpitnayan123-bot/Sanket) | Prototype | Doctor's consultation voice → FHIR clinical note → voice reminders for patients, aligned with India's ABDM |
-
 <img src="assets/divider.svg" width="100%" alt=""/>
 
 ## Stack & Learning
