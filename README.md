@@ -10,3 +10,9 @@
 <a href="https://github.com/arpitnayan123-bot/arpitnayan123-bot/blob/main/ASSETS.md">
   <img src="assets/typing.svg" width="600" alt="Typing animation — building AI-powered products · exploring autonomous coding agents · developing healthcare intelligence · engineering software systems · learning and building as an aspiring founder"/>
 </a>
+
+<br/>
+
+<img src="https://img.shields.io/badge/IIT_Jodhpur-BS_Management_%26_Technology-1F6FEB?style=flat-square&labelColor=0D1117" alt="IIT Jodhpur — BS in Management &amp; Technology"/>
+&nbsp;
+<img src="https://img.shields.io/badge/IIT_Madras-BS_Data_Science_%26_Applications-A371F7?style=flat-square&labelColor=0D1117" alt="IIT Madras — BS in Data Science and Applications"/>
