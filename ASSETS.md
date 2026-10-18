@@ -33,3 +33,8 @@ terminal aesthetic consistent across platforms.
 | `assets/footer-banner-mobile.svg` | compact footer for narrow screens |
 | `assets/divider.svg` | section separator with a slow traveling glint |
 | `profile-3d-settings.json` | custom palette for the 3D contribution graph |
+
+All custom visuals are self-hosted (no third-party generators), script-free,
+and use SMIL animations that render inside GitHub's `<img>` pipeline. Every
+animated element keeps full-content initial attributes, so the SVGs degrade
+to complete static images if a renderer ignores SMIL.
