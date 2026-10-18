@@ -72,3 +72,9 @@ const arpit: Builder = {
 > Clinics, pharmacies, and patient experiences today run on disconnected software — Nexura OS connects them on one platform.
 
 An integrated healthcare operating system linking clinical workflows, pharmacy operations, patient portals, and AI-assisted health tools on a shared platform layer. This is my primary project — where I'm learning what it actually takes to design, build, and operate a serious multi-product system.
+
+<img src="https://img.shields.io/badge/Next.js_16-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js 16"/>
+<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/PostgreSQL-1B2540?style=flat-square&logo=postgresql&logoColor=8B5CF6" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Redis-1B2540?style=flat-square&logo=redis&logoColor=8B5CF6" alt="Redis"/>
+<img src="https://img.shields.io/badge/Prisma-1B2540?style=flat-square&logo=prisma&logoColor=8B5CF6" alt="Prisma"/>
