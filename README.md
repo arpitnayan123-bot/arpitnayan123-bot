@@ -148,3 +148,7 @@ The early implementation of my IIT-focused founder-network idea: an invite-only 
 
 <img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/Next.js-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js"/>
+
+<img src="https://img.shields.io/badge/%E2%97%8F_Early_Build-1F6FEB?style=flat-square&labelColor=0D1117" alt="Status: early build"/>
+
+[**→ repository**](https://github.com/arpitnayan123-bot/Conclave)
