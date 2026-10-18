@@ -210,6 +210,29 @@ def draw_particles(layer, parts, t, F, W, H):
                   fill=p["col"] + (int(a),))
 
 
+def build_stars(n, W, y_max, rng):
+    stars = []
+    for _ in range(n):
+        stars.append({
+            "x": rng.uniform(10, W - 10),
+            "y": rng.uniform(6, y_max),
+            "r": rng.uniform(0.8, 1.9) * SS,
+            "m": rng.choice((1, 2, 3)),
+            "ph": rng.uniform(0, 2 * math.pi),
+            "a": rng.uniform(36, 110),
+            "col": rng.choice((TITLE, BLUE_LT, VIOLET_LT)),
+        })
+    return stars
+
+
+def draw_stars(layer, stars, t, F):
+    d = ImageDraw.Draw(layer)
+    for s in stars:
+        a = s["a"] * (0.35 + 0.65 * (0.5 + 0.5 * math.sin(2 * math.pi * s["m"] * t / F + s["ph"])))
+        d.ellipse([s["x"] - s["r"], s["y"] - s["r"], s["x"] + s["r"], s["y"] + s["r"]],
+                  fill=s["col"] + (int(a),))
+
+
 # ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
