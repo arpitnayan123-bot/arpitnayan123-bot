@@ -8,18 +8,27 @@ the GitHub Actions workflows work.
 
 | Token | Value | Used for |
 | --- | --- | --- |
-| Background (deep) | `#0A0E1A` | hero header, footer, 3D graph (dark) |
-| Panel / charcoal | `#0D1117` | terminal body, analytics backgrounds |
-| Border | `#263048` | terminal frame, subtle strokes |
-| Electric blue | `#1F6FEB` / `#58A6FF` | accents, prompts, framework badges |
-| Restrained violet | `#8B5CF6` / `#A371F7` | accents, data badges, highlights |
-| Primary text | `#E6EDF3` | headings inside SVGs |
-| Muted text | `#8B949E` / `#6E7681` | secondary labels |
+| Background (deep) | `#110D1A` / `#110E19` | hero, footer, glass panels, 3D graph (dark) |
+| Panel border | `#2E2740` | terminal frame, glass card borders, analytics card borders |
+| Signature gold | `#FFC93C` / `#FFE29A` | accents, typing strip (dark), glass titles, snake, 3D ramp |
+| Amber / warm orange | `#FFB454` / `#FF8C42` | wave ribbons, secondary accents, email badge |
+| Restrained violet | `#8B5CF6` / `#A78BFA` | contrast accents, IIT Madras badge, Medulla glow |
+| Primary text | `#F2E9D8` / `#F5EDDC` | headings inside SVGs, GIF title band |
+| Warm muted | `#E8DCC4` / `#9A8C74` | secondary labels, faint text |
 
 Typography is a system monospace stack (`ui-monospace, SFMono-Regular, Menlo,
 Consolas, monospace`) — GitHub renders `<img>` SVGs in an isolated document,
 so external web fonts are not an option and system monospace keeps the
 terminal aesthetic consistent across platforms.
+
+### Glassmorphism recipe
+
+The flagship project cards are frosted-glass panels built entirely in SVG:
+a baked aubergine panel, two blurred accent blobs drifting behind it on SMIL
+`translate` loops, a white top sheen, a slow diagonal shimmer sweep, a
+corner-lit gradient border, a gold gradient title and a translucent status
+pill. Each card carries exactly one line of copy — name, category, brief,
+tech — so the section reads at a glance and the details stay in the repos.
 
 ## Assets
 
