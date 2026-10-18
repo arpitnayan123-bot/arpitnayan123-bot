@@ -127,6 +127,46 @@ def text_layer(size, cx, baseline_y, s, fnt, fill, spacing=0, glow=0):
     return layer, glow_layer.filter(ImageFilter.GaussianBlur(radius=glow))
 
 
+def gradient_text_layer(size, cx, baseline_y, s, fnt, stops, spacing=0, glow=0):
+    """Render text filled with a vertical gradient sampled across its cap
+    band, optionally with a blurred glow of the same gradient."""
+    mask = Image.new("L", size, 0)
+    spaced_text(ImageDraw.Draw(mask), cx, baseline_y, s, fnt, 255, spacing)
+    fs = fnt.size
+    y0, y1 = baseline_y - fs * 0.80, baseline_y + fs * 0.10
+    grad = Image.new("RGB", size, (0, 0, 0))
+    gd = ImageDraw.Draw(grad)
+    for y in range(size[1]):
+        t = (y - y0) / max(1.0, y1 - y0)
+        gd.line([(0, y), (size[0], y)], fill=gradient(stops, min(1.0, max(0.0, t))))
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    layer.paste(grad, (0, 0), mask)
+    if not glow:
+        return layer, None
+    glow_layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    glow_layer.paste(grad, (0, 0), mask)
+    return layer, glow_layer.filter(ImageFilter.GaussianBlur(radius=glow))
+
+
+def segments_layer(size, cx, baseline_y, segments, fnt, spacing=0):
+    """Render a multi-colour centered text line as one transparent layer.
+    Spacing applies inside each segment; segment boundaries carry none."""
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    widths = []
+    for s, _fill in segments:
+        w = sum(d.textlength(ch, font=fnt) for ch in s)
+        widths.append(w)
+    total = sum(widths) + spacing * SS * sum(len(s) - 1 for s, _ in segments)
+    x = cx - total / 2
+    for (s, fill), _w in zip(segments, widths):
+        for ch in s:
+            d.text((x, baseline_y), ch, font=fnt, fill=fill, anchor="ls")
+            x += d.textlength(ch, font=fnt) + spacing * SS
+        x -= spacing * SS
+    return layer
+
+
 def dot_grid(size, spacing=28, color=BLUE_LT, alpha=13):
     layer = Image.new("RGBA", size, (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
