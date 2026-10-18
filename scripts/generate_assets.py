@@ -378,6 +378,50 @@ def mantra_svg() -> str:
 """
 
 
+# ----------------------------------------------------------------------------
+# 5. Contribution activity banner
+# ----------------------------------------------------------------------------
+
+AW, AH = 896, 96           # activity banner canvas
+CELL_RAMP = ["#1D1826", "#3F3214", "#8A6414", "#D6951F", "#FFC93C"]
+
+
+def activity_header_svg() -> str:
+    """Frosted banner for the contribution section: a breathing contribution
+    ramp on each side, a gold gradient title and a quiet microcopy line."""
+    cells = []
+    seq = [0, 1, 2, 3, 4, 3, 2]  # rise and fall across the 5-color ramp
+    for x0, begin in ((116, 0.0), (672, 2.45)):
+        for i, lvl in enumerate(seq):
+            x = x0 + i * 16
+            cells.append(
+                f'  <rect x="{x}" y="42" width="12" height="12" rx="3" '
+                f'fill="{CELL_RAMP[lvl]}" opacity="1">'
+                f'<animate attributeName="opacity" values="0.35;1;0.35" '
+                f'dur="4.9s" begin="{begin + i * 0.35:.2f}s" '
+                f'repeatCount="indefinite"/></rect>'
+            )
+    body = "\n".join(cells)
+    return f"""{GENERATED_NOTE}
+<svg xmlns="http://www.w3.org/2000/svg" width="{AW}" height="{AH}" viewBox="0 0 {AW} {AH}" role="img" aria-label="Contribution Activity - every square is a day of showing up">
+  <defs>
+    {lin_grad("apanel", [(0, "#FFFFFF", "0.08"), (1, "#FFFFFF", "0.02")], x1="0%", y1="0%", x2="0%", y2="100%")}
+    {lin_grad("aborder", [(0, "#FFFFFF", "0.35"), (0.5, GOLD, "0.18"), (1, "#FFFFFF", "0.05")])}
+    <linearGradient id="atext" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0" stop-color="{GOLD_LT}"><animate attributeName="stop-color" values="{GOLD_LT};{ORANGE};{GOLD_LT}" dur="7s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="{AMBER}"><animate attributeName="stop-color" values="{AMBER};{GOLD_LT};{AMBER}" dur="7s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+  </defs>
+  <rect x="{P_X}" y="{P_Y}" width="{P_W}" height="{AH - 20}" rx="16" fill="{BG_PANEL}"/>
+  <rect x="{P_X}" y="{P_Y}" width="{P_W}" height="{AH - 20}" rx="16" fill="url(#apanel)"/>
+  <rect x="{P_X + 0.6}" y="{P_Y + 0.6}" width="{P_W - 1.2}" height="{AH - 21.2}" rx="16" fill="none" stroke="url(#aborder)" stroke-width="1.2"/>
+{body}
+  <text x="{AW / 2}" y="47" text-anchor="middle" font-family="{MONO}" font-size="16.5" font-weight="700" letter-spacing="2.8" fill="url(#atext)">CONTRIBUTION ACTIVITY</text>
+  <text x="{AW / 2}" y="69" text-anchor="middle" font-family="{MONO}" font-size="10" letter-spacing="1.8" fill="{FAINT}">EVERY SQUARE IS A DAY OF SHOWING UP</text>
+</svg>
+"""
+
+
 # (file, monogram, name, category, one-line brief, tech line, status label,
 #  status dot, accent, drifting background blobs)
 PROJECTS: list[dict] = [
@@ -505,6 +549,7 @@ FILES = {
     "terminal.svg": terminal_svg,
     "divider.svg": divider_svg,
     "mantra.svg": mantra_svg,
+    "activity-header.svg": activity_header_svg,
 }
 
 
