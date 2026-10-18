@@ -42,6 +42,12 @@ to complete static images if a renderer ignores SMIL.
 The header and footer ship in two sizes and are switched with a standard
 `<picture>` + `max-width` media query so text stays readable on phones.
 
+The profile deliberately mixes two motion systems: the ambient full-width
+visuals (aurora hero, nebula footer) are rendered GIFs — richer layered
+motion than SMIL allows — while the text-critical animations (typing,
+terminal, divider) stay as vector SMIL SVGs so the words remain pixel-crisp
+at any scale.
+
 ## Regenerating the assets
 
 ```bash
