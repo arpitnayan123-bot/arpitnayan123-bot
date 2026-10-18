@@ -42,6 +42,8 @@ tech — so the section reads at a glance and the details stay in the repos.
 | `assets/project-nexura.svg` | glassmorphism card — Nexura OS (healthcare operating system) |
 | `assets/project-rea.svg` | glassmorphism card — REA (AI coding agent, private) |
 | `assets/project-medulla.svg` | glassmorphism card — Medulla (medical learning OS) |
+| `assets/project-aarogya.svg` | glassmorphism card — Aarogya AI (AI health-intelligence platform) |
+| `assets/project-sanket.svg` | glassmorphism card — Sanket (voice to FHIR clinical notes) |
 | `assets/project-healthtwin.svg` | glassmorphism card — Personal Health Twin (concept) |
 | `assets/project-conclave.svg` | glassmorphism card — Conclave (IIT founder network) |
 | `assets/footer-nebula.gif` | closing golden nebula banner — twinkling stars — "Learn. Build. Iterate." |
@@ -70,8 +72,8 @@ python3 scripts/generate_assets.py   # vector animations + glass cards (requires
 python3 scripts/generate_gifs.py     # rendered GIFs (hero, footer) - requires Pillow
 ```
 
-The vector generator writes its three animated SVGs, the mantra strip and
-the five glass project cards from the tokens and content lists at the top of
+The vector generator writes its three animated SVGs, the mantra strip, the activity
+banner and the seven glass project cards from the tokens and content lists at the top of
 the script — edit `PHRASES` for the typing strip, `TERMINAL_LINES` for the
 terminal session and the `PROJECTS` list for the glass cards. The GIF
 generator renders at 2x and writes four looping GIFs; edit `NAME`,
