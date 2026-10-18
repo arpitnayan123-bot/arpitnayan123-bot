@@ -12,9 +12,9 @@ scripts/generate_assets.py — because crisp text needs vectors.
 Design tokens
 -------------
 Kept in sync with scripts/generate_assets.py (documented in ASSETS.md):
-- Backgrounds : deep midnight navy #0A0E1A
-- Accents     : electric blue #1F6FEB / #58A6FF, restrained violet #8B5CF6 / #A371F7
-- Text        : #F0F6FC (title), #A5B4D6 (subtitle), #6E7681 (faint)
+- Backgrounds : deep aubergine-charcoal #110D1A
+- Accents     : signature gold #FFC93C / #FFE29A, amber #FFB454, warm orange #FF8C42
+- Text        : #F5EDDC (title band), #E8DCC4 (subtitle), #9A8C74 (faint)
 - Typography  : DejaVu Sans Mono (rendered at 2x and downscaled for clean edges)
 
 Every loop is mathematically seamless: wave phases advance by whole periods
@@ -44,17 +44,25 @@ FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 # ----------------------------------------------------------------------------
 # Design tokens (keep in sync with scripts/generate_assets.py)
 # ----------------------------------------------------------------------------
-BG_DEEP = (10, 14, 26)        # midnight navy   #0A0E1A
-BLUE = (31, 111, 235)         # electric blue   #1F6FEB
-BLUE_LT = (88, 166, 255)      # light blue      #58A6FF
-BLUE_MID = (76, 111, 255)     # gradient mid    #4C6FFF
-VIOLET = (139, 92, 246)       # violet          #8B5CF6
-VIOLET_MID = (90, 124, 255)   # gradient mid    #5A7CFF
-VIOLET_LT = (163, 113, 247)   # light violet    #A371F7
-TITLE = (240, 246, 252)       # headline        #F0F6FC
-SUBTITLE = (165, 180, 214)    # header subtitle #A5B4D6
-FAINT = (110, 118, 129)       # faint text      #6E7681
-GLOW_BODY = (16, 26, 51)      # footer body top #101A33
+BG_DEEP = (17, 13, 26)        # deep aubergine-charcoal #110D1A
+GOLD = (255, 201, 60)         # signature gold  #FFC93C
+GOLD_LT = (255, 226, 154)     # light gold      #FFE29A
+GOLD_DEEP = (232, 160, 32)    # deep gold       #E8A020
+AMBER = (255, 180, 84)        # amber           #FFB454
+ORANGE = (255, 140, 66)       # warm orange     #FF8C42
+CREAM = (245, 237, 220)       # warm white      #F5EDDC
+WARM_SOFT = (232, 220, 196)   # warm cream      #E8DCC4
+WARM_FAINT = (154, 140, 116)  # warm gray       #9A8C74
+GLOW_BODY = (32, 23, 46)      # footer body top #20172E
+BLUE = (31, 111, 235)         # (legacy) electric blue   #1F6FEB
+BLUE_LT = (88, 166, 255)      # (legacy) light blue      #58A6FF
+BLUE_MID = (76, 111, 255)     # (legacy) gradient mid    #4C6FFF
+VIOLET = (139, 92, 246)       # (legacy) violet          #8B5CF6
+VIOLET_MID = (90, 124, 255)   # (legacy) gradient mid    #5A7CFF
+VIOLET_LT = (163, 113, 247)   # (legacy) light violet    #A371F7
+TITLE = (240, 246, 252)       # (legacy) headline        #F0F6FC
+SUBTITLE = (165, 180, 214)    # (legacy) subtitle        #A5B4D6
+FAINT = (110, 118, 129)       # (legacy) faint text      #6E7681
 
 SS = 2                        # supersampling factor (render 2x, downscale 1x)
 FRAMES = 48                   # frames per loop
