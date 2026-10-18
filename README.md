@@ -185,7 +185,7 @@ Beyond the flagships, these are live experiments I'm learning from:
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-blueviolet.svg"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-gilded.svg"/>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-season-animate.svg"/>
     <img width="98%" src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-season-animate.svg" alt="3D visualization of the GitHub contribution calendar for arpitnayan123-bot"/>
   </picture>
@@ -217,11 +217,11 @@ I'm open to collaborating on **AI-powered products**, **developer tools and codi
 </a>
 &nbsp;
 <a href="https://github.com/arpitnayan123-bot">
-  <img src="https://img.shields.io/badge/GitHub-arpitnayan123--bot-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Arpit Nayan on GitHub"/>
+  <img src="https://img.shields.io/badge/GitHub-arpitnayan123--bot-2E2740?style=for-the-badge&logo=github&logoColor=FFC93C" alt="Arpit Nayan on GitHub"/>
 </a>
 &nbsp;
 <a href="mailto:arpitnayan123@gmail.com">
-  <img src="https://img.shields.io/badge/Email-arpitnayan123%40gmail.com-1F6FEB?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Arpit Nayan"/>
+  <img src="https://img.shields.io/badge/Email-arpitnayan123%40gmail.com-FF8C42?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Arpit Nayan"/>
 </a>
 
 </div>
@@ -230,7 +230,7 @@ I'm open to collaborating on **AI-powered products**, **developer tools and codi
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=arpitnayan123-bot&style=flat-square&color=1F6FEB&label=PROFILE+VIEWS" alt="Profile view counter"/>
+<img src="https://komarev.com/ghpvc/?username=arpitnayan123-bot&style=flat-square&color=FFC93C&label=PROFILE+VIEWS" alt="Profile view counter"/>
 
 <picture>
   <source media="(max-width: 560px)" srcset="assets/footer-nebula-mobile.gif"/>
