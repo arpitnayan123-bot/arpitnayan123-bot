@@ -1,31 +1,31 @@
 {
   "type": "normal",
-  "fileName": "profile-blueviolet.svg",
+  "fileName": "profile-gilded.svg",
   "backgroundColor": "#FFFFFF",
   "foregroundColor": "#24292F",
-  "strongColor": "#1F6FEB",
+  "strongColor": "#B9770E",
   "weakColor": "#57606A",
-  "radarColor": "#8B5CF6",
+  "radarColor": "#E8A020",
   "growingAnimation": true,
   "contribColors": [
-    "#E7ECF3",
-    "#BFD3F2",
-    "#7FA8E8",
-    "#3B6FE0",
-    "#1F6FEB"
+    "#EDE7D9",
+    "#EFD9A0",
+    "#E5BC55",
+    "#DB9A1E",
+    "#C67C00"
   ],
   "darkMode": {
-    "backgroundColor": "#0A0E1A",
-    "foregroundColor": "#E6EDF3",
-    "strongColor": "#58A6FF",
-    "weakColor": "#8B949E",
-    "radarColor": "#A371F7",
+    "backgroundColor": "#110E19",
+    "foregroundColor": "#F2E9D8",
+    "strongColor": "#FFC93C",
+    "weakColor": "#96886F",
+    "radarColor": "#FFB454",
     "contribColors": [
-      "#161B22",
-      "#1E3A5F",
-      "#2563C4",
-      "#3B82F6",
-      "#8B5CF6"
+      "#1D1826",
+      "#3F3214",
+      "#8A6414",
+      "#D6951F",
+      "#FFC93C"
     ]
   }
 }
