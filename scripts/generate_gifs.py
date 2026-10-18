@@ -305,6 +305,7 @@ def compose_hero(width=896, height=260, name_fs=46, tag_fs=15, eye_fs=11.5):
 
 FILES = {
     "hero-aurora.gif": lambda: compose_hero(),
+    "hero-aurora-mobile.gif": lambda: compose_hero(width=620, height=216, name_fs=31, tag_fs=13, eye_fs=10.5),
 }
 
 
