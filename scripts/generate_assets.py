@@ -126,85 +126,6 @@ def lin_grad(grad_id: str, stops, x1="0%", y1="0%", x2="100%", y2="0%") -> str:
 
 
 # ----------------------------------------------------------------------------
-# 1. Hero header
-# ----------------------------------------------------------------------------
-
-NAME = "ARPIT NAYAN"
-TAGLINE = "AI Builder \u00b7 Aspiring Founder \u00b7 IIT Student"
-EYEBROW = "// building in public"
-
-W, H = 896, 260
-
-
-def header_svg(
-    width: int = 896,
-    height: int = 260,
-    name_fs: int = 46,
-    tag_fs: float = 15,
-    eye_fs: float = 11.5,
-) -> str:
-    W, H = width, height
-    cx = W / 2
-    name_y = int(H * 0.485)
-    bar_y = name_y + 14
-    tag_y = bar_y + 28
-    eye_y = name_y - 50
-    glow_cy = int(H * 0.42)
-    # periods must divide W for seamless loops
-    p_back = W // 2
-    p_front = W // 4
-    p_slow = W
-    wave_back = wave_path(W, H - 64, 20, p_back)
-    wave_front = wave_path(W, H - 46, 16, p_front)
-    # third slow decorative wave, drawn under the two main ones
-    wave_slow = wave_path(W, H - 78, 12, p_slow)
-
-    dots = (
-        f'<pattern id="dotgrid" width="28" height="28" patternUnits="userSpaceOnUse">'
-        f'<circle cx="2" cy="2" r="1.1" fill="{BLUE_LT}" opacity="0.05"/></pattern>'
-    )
-    glow = (
-        f'<radialGradient id="glow" cx="50%" cy="42%" r="55%">'
-        f'<stop offset="0%" stop-color="{VIOLET}" stop-opacity="0.16"/>'
-        f'<stop offset="55%" stop-color="{BLUE}" stop-opacity="0.07"/>'
-        f'<stop offset="100%" stop-color="{BLUE}" stop-opacity="0"/></radialGradient>'
-    )
-    bar_w = 120 if W >= 800 else 96
-
-    return f"""{GENERATED_NOTE}
-<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Arpit Nayan - AI Builder, Aspiring Founder, IIT Student">
-  <defs>
-    {dots}
-    {glow}
-    {lin_grad("wg1", [(0, BLUE, 0.32), (0.5, "#4C6FFF", 0.30), (1, VIOLET, 0.32)])}
-    {lin_grad("wg2", [(0, VIOLET, 0.55), (0.55, "#5A7CFF", 0.50), (1, BLUE, 0.55)])}
-    {lin_grad("wg3", [(0, BLUE, 0.16), (1, VIOLET, 0.16)])}
-    {lin_grad("bar", [(0, BLUE_LT), (1, VIOLET_LT)])}
-  </defs>
-
-  <rect width="{W}" height="{H}" fill="{BG_DEEP}"/>
-  <rect width="{W}" height="{H}" fill="url(#dotgrid)"/>
-  <ellipse cx="{cx}" cy="{glow_cy}" rx="{int(W * 0.42)}" ry="{int(H * 0.44)}" fill="url(#glow)"/>
-
-  {wave_layer(wave_slow, W, "21s", "wg3", 1.0)}
-  {wave_layer(wave_back, W, "14s", "wg1", 1.0)}
-  {wave_layer(wave_front, W, "9s", "wg2", 1.0)}
-
-  <text x="{cx}" y="{eye_y}" text-anchor="middle" font-family="{MONO}" font-size="{eye_fs}"
-        letter-spacing="2.5" fill="{FAINT}">{EYEBROW}</text>
-
-  <text x="{cx}" y="{name_y}" text-anchor="middle" font-family="{MONO}" font-size="{name_fs}"
-        font-weight="700" letter-spacing="6" fill="#F0F6FC">{NAME}</text>
-
-  <rect x="{cx - bar_w / 2}" y="{bar_y}" width="{bar_w}" height="2.6" rx="1.3" fill="url(#bar)"/>
-
-  <text x="{cx}" y="{tag_y}" text-anchor="middle" font-family="{MONO}" font-size="{tag_fs}"
-        letter-spacing="2" fill="{SUBTITLE}">{TAGLINE}</text>
-</svg>
-"""
-
-
-# ----------------------------------------------------------------------------
 # 2. Typing animation
 # ----------------------------------------------------------------------------
 
@@ -449,17 +370,11 @@ def divider_svg() -> str:
 # ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
-
 FILES = {
-    # desktop variants
-    "header-hero.svg": lambda: header_svg(),
     "typing.svg": typing_svg,
     "terminal.svg": terminal_svg,
     "footer-banner.svg": lambda: footer_svg(),
     "divider.svg": divider_svg,
-    # compact variants served via <picture> on small screens
-    "header-hero-mobile.svg": lambda: header_svg(width=620, height=216, name_fs=31, tag_fs=13, eye_fs=10.5),
-    "footer-banner-mobile.svg": lambda: footer_svg(width=620, height=124, main_fs=20, sub_fs=10),
 }
 
 
