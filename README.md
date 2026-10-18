@@ -231,3 +231,10 @@ Beyond the flagships, these are live experiments I'm learning from:
 
 ## 3D Contribution Calendar
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-blueviolet.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-season-animate.svg"/>
+    <img width="98%" src="https://raw.githubusercontent.com/arpitnayan123-bot/arpitnayan123-bot/main/profile-3d-contrib/profile-season-animate.svg" alt="3D visualization of the GitHub contribution calendar for arpitnayan123-bot"/>
+  </picture>
+</div>
