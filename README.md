@@ -137,3 +137,11 @@ An exploratory consumer-health concept: a longitudinal personal health memory th
 </td></tr>
 </table>
 
+<table>
+<tr><td valign="top">
+
+### IIT Founder & Builder Network &nbsp;·&nbsp; Conclave
+
+> Serious student builders need a room without noise.
+
+The early implementation of my IIT-focused founder-network idea: an invite-only space where entrepreneurial students share what they're building, review each other's work, and meet potential collaborators through a review-and-invitation process.
