@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """
-Generate the animated SVG assets used by the GitHub profile README.
+Generate the vector SMIL assets used by the GitHub profile README.
 
-Everything the profile shows as a custom visual (hero header, typing
-animation, developer terminal, footer banner, section divider) is built
-here from a single design system so colours, typography and motion stay
-consistent across the whole profile.
+The text-critical animations - the typing strip, the developer terminal and
+the section divider - are built here as SMIL SVGs: vectors keep text crisp,
+SMIL renders inside GitHub's sanitised <img> pipeline, and every element
+keeps full-content initial attributes so the SVGs degrade to complete
+static images when animation is ignored.
+
+The ambient full-width visuals (aurora hero, nebula footer) are rendered as
+looping GIFs by scripts/generate_gifs.py, which shares this design system.
 
 Design system
 -------------
-- Backgrounds : deep midnight navy (#0A0E1A) and charcoal panel (#0D1117)
+- Backgrounds : charcoal panel (#0D1117)
 - Accents     : electric blue (#1F6FEB / #58A6FF), restrained violet (#8B5CF6 / #A371F7)
-- Text        : #E6EDF3 (primary), #8B949E (muted), #6E7681 (faint)
+- Text        : #E6EDF3 (primary), #C9D1D9 (secondary), #6E7681 (faint)
 - Typography  : system monospace stack (no webfonts - GitHub <img> SVGs
                 cannot load external fonts)
-- Motion      : SMIL animations only (no CSS keyframes needed, no JS -
-                GitHub sanitises scripts and SMIL renders inside <img>)
+- Motion      : SMIL animations only (no CSS keyframes needed, no JS)
 
 GitHub compatibility notes
 --------------------------
@@ -41,7 +44,7 @@ ASSETS = ROOT / "assets"
 # ----------------------------------------------------------------------------
 # Design tokens
 # ----------------------------------------------------------------------------
-BG_DEEP = "#0A0E1A"      # midnight navy
+
 BG_PANEL = "#0D1117"     # charcoal panel
 STROKE = "#263048"       # subtle border
 BLUE = "#1F6FEB"         # electric blue
@@ -50,9 +53,7 @@ VIOLET = "#8B5CF6"       # restrained violet
 VIOLET_LT = "#A371F7"    # light violet
 TEXT = "#E6EDF3"         # primary text
 TEXT_SOFT = "#C9D1D9"    # secondary text
-MUTED = "#8B949E"        # muted text
 FAINT = "#6E7681"        # faint text
-SUBTITLE = "#A5B4D6"     # header subtitle
 
 MONO = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
@@ -64,51 +65,6 @@ GENERATED_NOTE = (
 # ----------------------------------------------------------------------------
 # Helpers
 # ----------------------------------------------------------------------------
-
-
-def wave_path(
-    width: int, baseline: float, amplitude: float, period: float, bottom: float = None
-) -> str:
-    """Build a seamless horizontal wave path spanning 2 * width.
-
-    The path starts and ends on the baseline, so a copy shifted by exactly
-    `width` tiles seamlessly; animating translate from 0 to -width gives an
-    endless wave. IMPORTANT: `period` must divide `width` exactly, otherwise
-    the loop visibly jumps. The curve is closed down to `bottom`
-    (default: baseline + amplitude * 4) so the shape can be filled solid.
-    """
-    span = width * 2
-    half = period / 2.0
-    if bottom is None:
-        bottom = baseline + amplitude * 4
-    d = [f"M0 {baseline:.1f}"]
-    x = 0.0
-    up = True
-    while x < span:
-        cx1, cx2 = x + half / 3.0, x + half * 2.0 / 3.0
-        dy = -amplitude if up else amplitude
-        d.append(f"C{cx1:.1f} {baseline + dy:.1f},{cx2:.1f} {baseline + dy:.1f},{x + half:.1f} {baseline:.1f}")
-        x += half
-        up = not up
-    d.append(f"L{span:.1f} {bottom:.1f} L0 {bottom:.1f} Z")
-    return " ".join(d)
-
-
-def wave_layer(
-    path_d: str, width: int, dur: str, grad_id: str, opacity: float, direction: int = 1
-) -> str:
-    """One translated wave <g> with a seamless SMIL loop."""
-    frm = "0 0" if direction > 0 else f"{-width} 0"
-    to = f"{-width} 0" if direction > 0 else "0 0"
-    return (
-        f'<g opacity="{opacity}">'
-        f'<path d="{path_d}" fill="url(#{grad_id})">'
-        f'<animateTransform attributeName="transform" attributeType="XML" '
-        f'type="translate" from="{frm}" to="{to}" dur="{dur}" '
-        f'repeatCount="indefinite"/>'
-        f"</path></g>"
-    )
-
 
 def lin_grad(grad_id: str, stops, x1="0%", y1="0%", x2="100%", y2="0%") -> str:
     parts = []
@@ -126,7 +82,7 @@ def lin_grad(grad_id: str, stops, x1="0%", y1="0%", x2="100%", y2="0%") -> str:
 
 
 # ----------------------------------------------------------------------------
-# 2. Typing animation
+# 1. Typing animation
 # ----------------------------------------------------------------------------
 
 PHRASES = [
@@ -192,9 +148,8 @@ def typing_svg() -> str:
 def escape(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
-
 # ----------------------------------------------------------------------------
-# 3. Developer terminal
+# 2. Developer terminal
 # ----------------------------------------------------------------------------
 
 TERMINAL_TITLE = "arpit@iitj \u2014 ~/profile"
@@ -297,9 +252,8 @@ def terminal_svg() -> str:
 </svg>
 """
 
-
 # ----------------------------------------------------------------------------
-# 5. Section divider
+# 3. Section divider
 # ----------------------------------------------------------------------------
 
 DW, DH = 896, 24
@@ -326,7 +280,6 @@ def divider_svg() -> str:
   <circle cx="{DW / 2}" cy="{DH / 2}" r="2.2" fill="{VIOLET_LT}" opacity="0.85"/>
 </svg>
 """
-
 
 # ----------------------------------------------------------------------------
 # main
