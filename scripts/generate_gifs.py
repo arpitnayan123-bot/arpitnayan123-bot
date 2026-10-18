@@ -249,10 +249,62 @@ def finalize(frames, out_path, duration=FRAME_MS):
 
 
 # ----------------------------------------------------------------------------
+# 1. Aurora hero
+# ----------------------------------------------------------------------------
+
+def compose_hero(width=896, height=260, name_fs=46, tag_fs=15, eye_fs=11.5):
+    rng = random.Random(SEED)
+    W, H = width * SS, height * SS
+    cx = W / 2
+    name_y = int(H * 0.485)
+    bar_y = name_y + 14 * SS
+    tag_y = bar_y + 28 * SS
+    eye_y = name_y - 50 * SS
+
+    base = Image.new("RGBA", (W, H), BG_DEEP + (255,))
+    base.alpha_composite(dot_grid((W, H)))
+    glow = radial_glow((W, H), cx, int(H * 0.42), int(W * 0.42), int(H * 0.46),
+                       VIOLET, 58, blur=18)
+
+    title_l, title_glow = text_layer((W, H), cx, name_y, NAME,
+                                     font(name_fs), TITLE, spacing=6, glow=11)
+    eye_l, _ = text_layer((W, H), cx, eye_y, EYEBROW,
+                          font(eye_fs, bold=False), FAINT, spacing=2.5)
+    tag_l, _ = text_layer((W, H), cx, tag_y, TAGLINE,
+                          font(tag_fs, bold=False), SUBTITLE, spacing=2)
+    bar = gradient_bar((W, H), cx, bar_y, 120, 2.6)
+
+    parts = build_particles(max(10, width // 56), W, H, rng)
+
+    frames = []
+    for f in range(FRAMES):
+        fr = base.copy()
+        fr.alpha_composite(scale_alpha(glow, 0.86 + 0.14 * math.sin(2 * math.pi * f / FRAMES)))
+        fr.alpha_composite(aurora_wave((W, H), H - 78 * SS, 12 * SS, W, 1.0 * W * f / FRAMES,
+                                       [(0, BLUE), (1, VIOLET)], 40))
+        fr.alpha_composite(aurora_wave((W, H), H - 64 * SS, 20 * SS, W // 2, 2.0 * (W // 2) * f / FRAMES,
+                                       [(0, BLUE), (0.5, BLUE_MID), (1, VIOLET)], 84))
+        fr.alpha_composite(aurora_wave((W, H), H - 46 * SS, 16 * SS, W // 4, 4.0 * (W // 4) * f / FRAMES,
+                                       [(0, VIOLET), (0.55, VIOLET_MID), (1, BLUE)], 140))
+        fr.alpha_composite(scale_alpha(title_glow, 0.8 + 0.2 * math.sin(2 * math.pi * f / FRAMES + 1.2)))
+        fr.alpha_composite(title_l)
+        fr.alpha_composite(eye_l)
+        fr.alpha_composite(bar)
+        fr.alpha_composite(tag_l)
+        draw_particles(fr, parts, f, FRAMES, W, H)
+        frames.append(fr)
+
+    out = ASSETS / ("hero-aurora.gif" if width >= 800 else "hero-aurora-mobile.gif")
+    finalize(frames, out)
+    return out
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
 FILES = {
+    "hero-aurora.gif": lambda: compose_hero(),
 }
 
 
