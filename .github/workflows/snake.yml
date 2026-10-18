@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
