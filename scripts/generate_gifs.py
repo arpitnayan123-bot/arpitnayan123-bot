@@ -70,6 +70,56 @@ FOOTER_SUB = "AI products \u00b7 healthcare technology \u00b7 software systems"
 
 
 # ----------------------------------------------------------------------------
+# Small helpers
+# ----------------------------------------------------------------------------
+
+def lerp(c1, c2, t):
+    return tuple(int(a + (b - a) * t) for a, b in zip(c1, c2))
+
+
+def gradient(stops, t):
+    """Sample a multi-stop colour gradient at t in [0, 1]."""
+    for (p0, c0), (p1, c1) in zip(stops, stops[1:]):
+        if t <= p1:
+            return lerp(c0, c1, (t - p0) / (p1 - p0))
+    return stops[-1][1]
+
+
+def scale_alpha(layer, k):
+    """Return a copy of an RGBA layer with its alpha scaled by k."""
+    alpha = layer.getchannel("A").point(lambda v: int(v * k))
+    out = layer.copy()
+    out.putalpha(alpha)
+    return out
+
+
+def font(size_px, bold=True):
+    return ImageFont.truetype(FONT_BOLD if bold else FONT_REG, int(size_px * SS))
+
+
+def spaced_text(draw, cx, baseline_y, s, fnt, fill, spacing=0):
+    """Draw letter-spaced text centered on cx with a baseline anchor."""
+    widths = [draw.textlength(ch, font=fnt) for ch in s]
+    total = sum(widths) + spacing * SS * (len(s) - 1)
+    x = cx - total / 2
+    for ch, w in zip(s, widths):
+        draw.text((x, baseline_y), ch, font=fnt, fill=fill, anchor="ls")
+        x += w + spacing * SS
+    return total
+
+
+def text_layer(size, cx, baseline_y, s, fnt, fill, spacing=0, glow=0):
+    """Render text on a transparent layer, optionally with a blurred glow."""
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    spaced_text(ImageDraw.Draw(layer), cx, baseline_y, s, fnt, fill, spacing)
+    if not glow:
+        return layer, None
+    glow_layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    spaced_text(ImageDraw.Draw(glow_layer), cx, baseline_y, s, fnt, fill, spacing)
+    return layer, glow_layer.filter(ImageFilter.GaussianBlur(radius=glow))
+
+
+# ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
 
