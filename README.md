@@ -123,3 +123,11 @@ A learning platform for medical students: a knowledge map of the MBBS curriculum
 </td></tr>
 </table>
 
+<table>
+<tr><td valign="top">
+
+### Personal Health Twin & Health Memory
+
+> A person's health history is usually a pile of reports and half-remembered details — not something you can actually read.
+
+An exploratory consumer-health concept: a longitudinal personal health memory that organizes records, signals, and notes over time, gradually forming a personal health representation that helps people see what is changing and why. Currently in research and design — no code published yet, by design.
