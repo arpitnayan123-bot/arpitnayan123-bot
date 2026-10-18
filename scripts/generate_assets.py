@@ -459,6 +459,7 @@ FILES = {
     "divider.svg": divider_svg,
     # compact variants served via <picture> on small screens
     "header-hero-mobile.svg": lambda: header_svg(width=620, height=216, name_fs=31, tag_fs=13, eye_fs=10.5),
+    "footer-banner-mobile.svg": lambda: footer_svg(width=620, height=124, main_fs=20, sub_fs=10),
 }
 
 
