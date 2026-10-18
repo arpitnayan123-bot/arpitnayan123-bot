@@ -15,3 +15,8 @@ the GitHub Actions workflows work.
 | Restrained violet | `#8B5CF6` / `#A371F7` | accents, data badges, highlights |
 | Primary text | `#E6EDF3` | headings inside SVGs |
 | Muted text | `#8B949E` / `#6E7681` | secondary labels |
+
+Typography is a system monospace stack (`ui-monospace, SFMono-Regular, Menlo,
+Consolas, monospace`) — GitHub renders `<img>` SVGs in an isolated document,
+so external web fonts are not an option and system monospace keeps the
+terminal aesthetic consistent across platforms.
