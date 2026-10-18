@@ -159,3 +159,7 @@ The early implementation of my IIT-focused founder-network idea: an invite-only 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
 ## Currently Building
+
+<div align="center">
+  <img src="assets/terminal.svg" width="100%" alt="Developer terminal — whoami: Arpit Nayan · interests: AI, Healthcare, Software Engineering · exploring: Autonomous Coding Agents · building: Healthcare Intelligence Systems"/>
+</div>
