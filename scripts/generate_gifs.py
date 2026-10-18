@@ -141,6 +141,41 @@ def radial_glow(size, cx, cy, rx, ry, color, core_alpha, blur=16):
     return layer.filter(ImageFilter.GaussianBlur(radius=blur * SS))
 
 
+def aurora_wave(size, baseline, amp, period, phase, stops, alpha):
+    """One horizontal aurora ribbon: gradient fill below a sine crest."""
+    W, H = size
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    step = 4 * SS
+    for x in range(0, W + step, step):
+        col = gradient(stops, x / W)
+        y = baseline + amp * math.sin(2 * math.pi * (x + phase) / period)
+        d.line([(x, y), (x, H)], fill=col + (alpha,), width=step)
+    return layer
+
+
+def v_gradient_rect(size, y0, top_color, bottom_color):
+    """Vertical gradient rect from y0 to the bottom of the canvas."""
+    W, H = size
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    span = max(1, H - y0)
+    for y in range(y0, H):
+        d.line([(0, y), (W, y)],
+               fill=lerp(top_color, bottom_color, (y - y0) / span) + (255,))
+    return layer
+
+
+def gradient_bar(size, cx, cy, w, h):
+    layer = Image.new("RGBA", size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    x0, x1 = cx - w * SS / 2, cx + w * SS / 2
+    for x in range(int(x0), int(x1)):
+        d.line([(x, cy - h * SS / 2), (x, cy + h * SS / 2)],
+               fill=gradient([(0, BLUE_LT), (1, VIOLET_LT)], (x - x0) / (x1 - x0)))
+    return layer
+
+
 # ----------------------------------------------------------------------------
 # main
 # ----------------------------------------------------------------------------
