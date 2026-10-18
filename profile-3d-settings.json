@@ -1,0 +1,31 @@
+{
+  "type": "normal",
+  "fileName": "profile-blueviolet.svg",
+  "backgroundColor": "#FFFFFF",
+  "foregroundColor": "#24292F",
+  "strongColor": "#1F6FEB",
+  "weakColor": "#57606A",
+  "radarColor": "#8B5CF6",
+  "growingAnimation": true,
+  "contribColors": [
+    "#E7ECF3",
+    "#BFD3F2",
+    "#7FA8E8",
+    "#3B6FE0",
+    "#1F6FEB"
+  ],
+  "darkMode": {
+    "backgroundColor": "#0A0E1A",
+    "foregroundColor": "#E6EDF3",
+    "strongColor": "#58A6FF",
+    "weakColor": "#8B949E",
+    "radarColor": "#A371F7",
+    "contribColors": [
+      "#161B22",
+      "#1E3A5F",
+      "#2563C4",
+      "#3B82F6",
+      "#8B5CF6"
+    ]
+  }
+}
