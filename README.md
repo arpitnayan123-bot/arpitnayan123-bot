@@ -90,19 +90,11 @@ const arpit: Builder = {
   [**→ repository**](https://github.com/arpitnayan123-bot/Medula)
 </div>
 
-<table>
-<tr><td valign="top">
+<br/>
 
-### Personal Health Twin & Health Memory
-
-> A person's health history is usually a pile of reports and half-remembered details — not something you can actually read.
-
-An exploratory consumer-health concept: a longitudinal personal health memory that organizes records, signals, and notes over time, gradually forming a personal health representation that helps people see what is changing and why. Currently in research and design — no code published yet, by design.
-
-<img src="https://img.shields.io/badge/%E2%97%8F_Concept-6E7681?style=flat-square&labelColor=0D1117" alt="Status: concept stage"/>
-
-</td></tr>
-</table>
+<div align="center">
+  <img src="assets/project-healthtwin.svg" width="100%" alt="Personal Health Twin — consumer health exploration. A longitudinal health memory that organizes records and signals into a readable life view. In research and design, no code published yet. Status: concept."/>
+</div>
 
 <table>
 <tr><td valign="top">
