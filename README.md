@@ -82,3 +82,7 @@ An integrated healthcare operating system linking clinical workflows, pharmacy o
 <img src="https://img.shields.io/badge/%E2%97%8F_Active_Build-1F6FEB?style=flat-square&labelColor=0D1117" alt="Status: active build"/>
 
 [**→ repository**](https://github.com/arpitnayan123-bot/Nexura-OS) &nbsp;·&nbsp; [**→ live preview**](https://nexura-os.space-z.ai)
+
+</td></tr>
+</table>
+
