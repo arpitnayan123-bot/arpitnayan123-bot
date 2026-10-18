@@ -164,7 +164,7 @@ const arpit: Builder = {
 
 <div align="center">
   <a href="https://github.com/arpitnayan123-bot" title="GitHub stats — arpitnayan123-bot">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=arpitnayan123-bot&show_icons=true&hide_border=false&bg_color=0F0D16&border_color=2E2740&title_color=FFC93C&icon_color=FFB454&text_color=E8DCC4" alt="GitHub stats card — total stars, commits, pull requests, issues and contributors for arpitnayan123-bot"/>
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=arpitnayan123-bot&show_icons=true&rank_icon=github&hide_border=false&bg_color=0F0D16&border_color=2E2740&title_color=FFC93C&icon_color=FFB454&text_color=E8DCC4" alt="GitHub stats card — total stars, commits, pull requests, contributors and overall activity rank for arpitnayan123-bot"/>
   </a>
   <a href="https://github.com/arpitnayan123-bot" title="Top languages — arpitnayan123-bot">
     <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arpitnayan123-bot&layout=compact&langs_count=8&hide_border=false&bg_color=0F0D16&border_color=2E2740&title_color=FFC93C&text_color=E8DCC4" alt="Most used languages across arpitnayan123-bot's public repositories"/>
