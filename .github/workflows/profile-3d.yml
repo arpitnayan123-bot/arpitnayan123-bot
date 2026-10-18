@@ -28,8 +28,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      # Profile palette — midnight navy background, blue→violet contribution ramp
-      # (defined in profile-3d-settings.json, rendered as profile-blueviolet.svg)
+      # Profile palette — aubergine background, gold→amber contribution ramp
+      # (defined in profile-3d-settings.json, rendered as profile-gilded.svg)
       - name: Generate profile-palette 3D profile
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
