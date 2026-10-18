@@ -38,3 +38,6 @@ All custom visuals are self-hosted (no third-party generators), script-free,
 and use SMIL animations that render inside GitHub's `<img>` pipeline. Every
 animated element keeps full-content initial attributes, so the SVGs degrade
 to complete static images if a renderer ignores SMIL.
+
+The header and footer ship in two sizes and are switched with a standard
+`<picture>` + `max-width` media query so text stays readable on phones.
