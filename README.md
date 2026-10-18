@@ -156,3 +156,6 @@ The early implementation of my IIT-focused founder-network idea: an invite-only 
 </td></tr>
 </table>
 
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## Currently Building
