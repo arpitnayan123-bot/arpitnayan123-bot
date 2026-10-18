@@ -51,3 +51,7 @@ const arpit: Builder = {
 - 🔭 I like understanding software from the inside — reading real codebases, reverse-engineering architectures, and crediting the open-source projects I learn from.
 - 🧭 Long-term, I want to build at the intersection of **AI, healthcare infrastructure, and software systems** — ambitious products that hold up outside the demo.
 - 🤝 Always open to **meaningful technical collaboration** — especially AI products, developer tools, and healthcare technology.
+
+<br clear="right"/>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
