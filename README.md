@@ -12,7 +12,7 @@
 &nbsp;
 <img src="https://img.shields.io/badge/IIT_Madras-BS_Data_Science_%26_Application-A371F7?style=flat-square&labelColor=0D1117" alt="IIT Madras"/>
 &nbsp;
-<img src="https://img.shields.io/badge/Focus-Commerce_·_Healthcare_·_AI-A371F7?style=flat-square&labelColor=0D1117" alt="Focus"/>
+<img src="https://img.shields.io/badge/Focus-AgriTech_·_Healthcare_·_AI-A371F7?style=flat-square&labelColor=0D1117" alt="Focus"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Status-Open_to_Collaborate-DB61A2?style=flat-square&labelColor=0D1117" alt="Open to Collaborate"/>
 
@@ -253,6 +253,6 @@ From symptom triage to lab report analysis, X-ray reading to predictive health �
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:A371F7,55:1F6FEB,100:0D1117&section=footer&text=Code%20%C2%B7%20Commerce%20%C2%B7%20Care&fontSize=22&fontColor=E6EDF3&fontAlignY=62&desc=Move%20fast%2C%20scale%20hard%2C%20stay%20honest.&descSize=13&descAlignY=83" width="100%" alt="Footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:A371F7,55:1F6FEB,100:0D1117&section=footer&text=Code%20%C2%B7%20AgriTech%20%C2%B7%20Care&fontSize=22&fontColor=E6EDF3&fontAlignY=62&desc=Move%20fast%2C%20scale%20hard%2C%20stay%20honest.&descSize=13&descAlignY=83" width="100%" alt="Footer"/>
 
 </div>
