@@ -426,6 +426,21 @@ PROJECTS: list[dict] = [
             (GOLD, 190, 145, 100, 0.28, -10, 10, 17),
         ],
     },
+    {
+        "file": "project-healthtwin.svg",
+        "mono": "H",
+        "name": "Personal Health Twin",
+        "category": "CONSUMER HEALTH · HEALTH MEMORY",
+        "brief": "A longitudinal health memory — records and signals organized into a readable life view.",
+        "tech": "in research and design — no code published yet, by design",
+        "status": "CONCEPT",
+        "dot": FAINT,
+        "accent": AMBER,
+        "blobs": [
+            (AMBER, 710, 45, 90, 0.36, -12, 8, 15),
+            (VIOLET, 200, 150, 105, 0.30, 10, -10, 18),
+        ],
+    },
 ]
 
 
