@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(max-width: 560px)" srcset="assets/header-hero-mobile.svg"/>
-  <img src="assets/header-hero.svg" width="100%" alt="Arpit Nayan — AI Builder · Aspiring Founder · IIT Student"/>
+  <source media="(max-width: 560px)" srcset="assets/hero-aurora-mobile.gif"/>
+  <img src="assets/hero-aurora.gif" width="100%" alt="Arpit Nayan — AI Builder · Aspiring Founder"/>
 </picture>
 
 <br/>
