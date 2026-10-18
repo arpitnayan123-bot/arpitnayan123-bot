@@ -96,24 +96,13 @@ const arpit: Builder = {
   <img src="assets/project-healthtwin.svg" width="100%" alt="Personal Health Twin — consumer health exploration. A longitudinal health memory that organizes records and signals into a readable life view. In research and design, no code published yet. Status: concept."/>
 </div>
 
-<table>
-<tr><td valign="top">
+<br/>
 
-### IIT Founder & Builder Network &nbsp;·&nbsp; Conclave
+<div align="center">
+  <img src="assets/project-conclave.svg" width="100%" alt="Conclave — IIT founder and builder network. An invite-only room where IIT student builders share work, review and find collaborators. TypeScript, Next.js. Status: early build."/>
 
-> Serious student builders need a room without noise.
-
-The early implementation of my IIT-focused founder-network idea: an invite-only space where entrepreneurial students share what they're building, review each other's work, and meet potential collaborators through a review-and-invitation process.
-
-<img src="https://img.shields.io/badge/TypeScript-1B2540?style=flat-square&logo=typescript&logoColor=58A6FF" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/Next.js-1B2540?style=flat-square&logo=nextdotjs&logoColor=58A6FF" alt="Next.js"/>
-
-<img src="https://img.shields.io/badge/%E2%97%8F_Early_Build-1F6FEB?style=flat-square&labelColor=0D1117" alt="Status: early build"/>
-
-[**→ repository**](https://github.com/arpitnayan123-bot/Conclave)
-
-</td></tr>
-</table>
+  [**→ repository**](https://github.com/arpitnayan123-bot/Conclave)
+</div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
