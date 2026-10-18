@@ -103,3 +103,11 @@ I study real open-source software-engineering systems to understand their archit
 </td></tr>
 </table>
 
+<table>
+<tr><td valign="top">
+
+### Medulla &nbsp;·&nbsp; Medical Learning OS
+
+> Medical students drown in scattered resources — Medulla turns the curriculum into one connected map.
+
+A learning platform for medical students: a knowledge map of the MBBS curriculum, first-principles lessons, spaced revision, question practice, and clinical cases. Built to make medical learning organized and interactive rather than fragmented.
