@@ -167,19 +167,19 @@ T_Y0 = 66
 
 # (prompt-command, output-tspans) — outputs are lists of (text, fill) spans
 TERMINAL_LINES = [
-    ("whoami", [("Arpit Nayan", VIOLET_LT)]),
+    ("whoami", [("Arpit Nayan", GOLD_LT)]),
     (
         "interests",
         [
-            ("AI", BLUE_LT),
-            (" | ", "#3D4660"),
+            ("AI", AMBER),
+            (" | ", "#4A3F55"),
             ("Healthcare", VIOLET_LT),
-            (" | ", "#3D4660"),
+            (" | ", "#4A3F55"),
             ("Software Engineering", TEXT_SOFT),
         ],
     ),
-    ("exploring", [("Autonomous ", TEXT_SOFT), ("Coding Agents", BLUE_LT)]),
-    ("building", [("Healthcare Intelligence", BLUE_LT), (" Systems", TEXT_SOFT)]),
+    ("exploring", [("Autonomous ", TEXT_SOFT), ("Coding Agents", AMBER)]),
+    ("building", [("Healthcare Intelligence", AMBER), (" Systems", TEXT_SOFT)]),
 ]
 
 
@@ -207,7 +207,7 @@ def terminal_svg() -> str:
         )
         groups.append(
             f'  <g clip-path="url(#tc{i})"><text x="{T_X}" y="{y:.1f}" font-family="{MONO}" '
-            f'font-size="{T_FS}"><tspan fill="{BLUE_LT}">$</tspan>'
+            f'font-size="{T_FS}"><tspan fill="{GOLD}">$</tspan>'
             f'<tspan fill="{TEXT}" dx="7">{escape(cmd)}</tspan></text></g>'
         )
         y += LINE_H
@@ -229,8 +229,8 @@ def terminal_svg() -> str:
     )
     prompt_cursor = (
         f'  <text x="{T_X}" y="{prompt_y:.1f}" font-family="{MONO}" font-size="{T_FS}">'
-        f'<tspan fill="{BLUE_LT}">$</tspan></text>'
-        f'  <rect x="{T_X + 16}" y="{prompt_y - 12:.1f}" width="8" height="14" fill="{BLUE_LT}">'
+        f'<tspan fill="{GOLD}">$</tspan></text>'
+        f'  <rect x="{T_X + 16}" y="{prompt_y - 12:.1f}" width="8" height="14" fill="{GOLD}">'
         f'<animate attributeName="opacity" values="1;0" calcMode="discrete" '
         f'dur="1.1s" repeatCount="indefinite"/></rect>'
     )
@@ -238,7 +238,7 @@ def terminal_svg() -> str:
     return f"""{GENERATED_NOTE}
 <svg xmlns="http://www.w3.org/2000/svg" width="{TTW}" height="{h}" viewBox="0 0 {TTW} {h}" role="img" aria-label="Terminal: whoami - Arpit Nayan; interests - AI, Healthcare, Software Engineering; exploring - Autonomous Coding Agents; building - Healthcare Intelligence Systems">
   <defs>
-    {lin_grad("thead", [(0, "#111A2E"), (1, "#0D1424")])}
+    {lin_grad("thead", [(0, "#1D1528"), (1, "#110E19")])}
   </defs>
 
   <rect x="1" y="1" width="{TTW - 2}" height="{h - 2}" rx="14" fill="{BG_PANEL}" stroke="{STROKE}" stroke-width="1.5"/>
