@@ -45,3 +45,7 @@ const arpit: Builder = {
   openTo: ["AI products", "dev tools", "healthcare tech"],
 };
 ```
+
+- 🎓 I study at **IIT Jodhpur** (BS in Management & Technology) and **IIT Madras** (BS in Data Science and Applications) — one degree for how systems are built, the other for how data explains them.
+- 🛠 I spend most of my time **building**: **Nexura OS**, a healthcare operating system; **REA**, my own AI coding agent; and **Medulla**, a learning platform for medical students.
+- 🔭 I like understanding software from the inside — reading real codebases, reverse-engineering architectures, and crediting the open-source projects I learn from.
