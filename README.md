@@ -263,3 +263,7 @@ I'm open to collaborating on **AI-powered products**, **developer tools and codi
 <a href="https://www.linkedin.com/in/arpit-nayan-842bb7309">
   <img src="https://img.shields.io/badge/LinkedIn-arpit--nayan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Arpit Nayan on LinkedIn"/>
 </a>
+&nbsp;
+<a href="https://github.com/arpitnayan123-bot">
+  <img src="https://img.shields.io/badge/GitHub-arpitnayan123--bot-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Arpit Nayan on GitHub"/>
+</a>
