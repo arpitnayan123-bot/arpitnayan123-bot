@@ -380,7 +380,23 @@ def mantra_svg() -> str:
 
 # (file, monogram, name, category, one-line brief, tech line, status label,
 #  status dot, accent, drifting background blobs)
-PROJECTS: list[dict] = []
+PROJECTS: list[dict] = [
+    {
+        "file": "project-nexura.svg",
+        "mono": "N",
+        "name": "Nexura OS",
+        "category": "HEALTHCARE OPERATING SYSTEM",
+        "brief": "Clinics, pharmacies and patient experiences — connected on one healthcare platform.",
+        "tech": "Next.js · TypeScript · PostgreSQL · Redis · Prisma",
+        "status": "ACTIVE BUILD",
+        "dot": GOLD,
+        "accent": GOLD,
+        "blobs": [
+            (GOLD, 700, 30, 95, 0.42, 14, 10, 12),
+            (VIOLET, 180, 150, 110, 0.34, -12, -8, 15),
+        ],
+    },
+]
 
 
 def render_project_cards(only: str | None = None) -> None:
